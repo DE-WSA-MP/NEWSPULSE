@@ -216,3 +216,22 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# =========================
+# NEWSPULSE Project
+# =========================
+
+# Environment / secrets
+.env.*
+!.env.example
+
+# Local IDE settings
+.vscode/
+.idea/
+
+# Local databases
+*.sqlite3
+
+# Temporary files
+*.tmp
+*.temp
