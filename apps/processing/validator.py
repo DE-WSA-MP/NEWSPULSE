@@ -3,78 +3,58 @@ from apps.processing.cleaner import REQUIRED_FIELDS
 
 
 def validate_record(record):
-    """
-    Validate one NewsPulse record.
-
-    Returns:
-        True  -> record is valid
-        False -> record is invalid
-    """
+    reasons = []
 
     if not isinstance(record, dict):
-        return False
+        return False, ["Record is not a dictionary"]
 
-    # Check that all required fields exist
     for field in REQUIRED_FIELDS:
         if field not in record:
-            return False
+            reasons.append(f"Missing field: {field}")
 
-    # Required fields should not be empty
-    if not record["id"]:
-        return False
+    if not record.get("id"):
+        reasons.append("ID is empty")
 
-    if not record["title"]:
-        return False
+    if not record.get("title"):
+        reasons.append("Title is empty")
 
-    if not record["source"]:
-        return False
+    if not record.get("source"):
+        reasons.append("Source is empty")
 
-    if not record["url"]:
-        return False
+    if not record.get("url"):
+        reasons.append("URL is empty")
 
-    # Validate published_at if present
-    if record["published_at"]:
-
+    if record.get("published_at"):
         try:
             datetime.strptime(
                 record["published_at"],
                 "%Y-%m-%d %H:%M:%S"
             )
-
         except ValueError:
-
-            # Also allow date-only values such as
-            # Wikipedia's current format.
             try:
                 datetime.strptime(
                     record["published_at"],
                     "%Y-%m-%d"
                 )
-
             except ValueError:
-                return False
+                reasons.append("Invalid published_at format")
 
-    return True
+    return len(reasons) == 0, reasons
 
 
 def validate_records(records):
-    """
-    Validate a list of NewsPulse records.
-
-    Returns:
-        valid_records
-        invalid_records
-    """
-
     valid_records = []
     invalid_records = []
 
     for record in records:
+        is_valid, reasons = validate_record(record)
 
-        if validate_record(record):
+        if is_valid:
             valid_records.append(record)
-
         else:
-            invalid_records.append(record)
+            invalid_records.append({
+                "record": record,
+                "reasons": reasons
+            })
 
     return valid_records, invalid_records
