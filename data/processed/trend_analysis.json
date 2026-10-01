@@ -1,20 +1,27 @@
 {
-    "total_records": 53,
+    "total_records": 94,
     "records_by_source": {
         "NASA": 25,
-        "Wikipedia": 18,
-        "Hacker News": 10
+        "Wikipedia": 19,
+        "Hacker News": 50
     },
-    "records_by_category": {
-        "Image Article": 4,
-        "Article": 6,
-        "News Release": 6,
-        "Blog": 8,
+    "records_by_content_type": {
+        "News Release": 1,
+        "Blog": 22,
+        "Article": 1,
+        "Image Article": 1,
+        "Current Event": 19,
+        "Story": 50
+    },
+    "records_by_topic": {
+        "Space": 25,
+        "Artificial Intelligence": 11,
         "Gaza war": 1,
         "Somali Civil War": 1,
         "coronation": 1,
         "Economic impact of the 2026 Iran war": 1,
         "Julius Baer Group controversies": 1,
+        "River Wear": 1,
         "Japan Meteorological Agency": 1,
         "Food and Drug Administration": 1,
         "North Korea–South Korea relations": 1,
@@ -28,116 +35,117 @@
         "2026 Moroccan general election": 1,
         "2026 Asian Games": 1,
         "Manchester City F.C. financial breaches scandal": 1,
-        "Technology": 10
+        "Other": 37,
+        "Software Development": 1,
+        "Hardware": 1
     },
     "records_by_date": {
-        "2026-10-01": 11,
-        "2026-09-30": 4,
+        "2026-10-01": 73,
         "2026-09-29": 19
     },
     "top_keywords": [
         [
-            "launch",
-            24
-        ],
-        [
-            "space",
-            19
-        ],
-        [
             "crew",
-            18
-        ],
-        [
-            "apod",
-            12
+            55
         ],
         [
             "spacex",
-            10
+            37
         ],
         [
-            "mission",
-            10
+            "space",
+            28
         ],
         [
-            "south",
-            10
+            "spacex crew",
+            25
         ],
         [
-            "international",
-            9
+            "launch",
+            20
         ],
         [
-            "force",
-            9
+            "dragon",
+            16
         ],
         [
-            "human",
-            9
+            "spacecraft",
+            16
         ],
         [
-            "sept",
-            8
-        ],
-        [
-            "contract",
-            8
+            "falcon",
+            15
         ],
         [
             "station",
-            8
+            13
         ],
         [
-            "weather",
-            8
+            "mission",
+            12
         ],
         [
-            "israeli",
-            8
+            "force",
+            11
+        ],
+        [
+            "second",
+            11
+        ],
+        [
+            "stage",
+            11
+        ],
+        [
+            "rocket",
+            11
+        ],
+        [
+            "astronaut",
+            10
         ]
     ],
     "top_keywords_by_source": {
         "NASA": [
             [
-                "launch",
-                24
-            ],
-            [
-                "space",
-                19
-            ],
-            [
                 "crew",
-                14
-            ],
-            [
-                "apod",
-                12
+                51
             ],
             [
                 "spacex",
-                10
+                37
             ],
             [
-                "mission",
-                10
+                "space",
+                28
             ],
             [
-                "international",
-                9
+                "spacex crew",
+                25
             ],
             [
-                "sept",
-                8
+                "launch",
+                20
             ],
             [
-                "contract",
-                8
+                "dragon",
+                16
+            ],
+            [
+                "spacecraft",
+                16
+            ],
+            [
+                "falcon",
+                15
             ],
             [
                 "station",
-                8
+                13
+            ],
+            [
+                "mission",
+                12
             ]
         ],
         "Wikipedia": [
@@ -154,6 +162,14 @@
                 8
             ],
             [
+                "police",
+                8
+            ],
+            [
+                "arrested",
+                8
+            ],
+            [
                 "bank",
                 6
             ],
@@ -166,62 +182,54 @@
                 6
             ],
             [
-                "police",
-                6
-            ],
-            [
                 "force",
                 6
             ],
             [
                 "pirates",
                 6
-            ],
-            [
-                "killed",
-                6
             ]
         ],
         "Hacker News": [
             [
                 "show",
+                4
+            ],
+            [
+                "how",
+                4
+            ],
+            [
+                "what",
                 2
             ],
             [
-                "pklm",
+                "broke",
                 2
             ],
             [
-                "language",
-                1
+                "you",
+                2
             ],
             [
-                "models",
-                1
+                "agent",
+                2
             ],
             [
-                "hide",
-                1
+                "got",
+                2
             ],
             [
-                "bad",
-                1
+                "your",
+                2
             ],
             [
-                "reports",
-                1
+                "account",
+                2
             ],
             [
-                "default",
-                1
-            ],
-            [
-                "language models",
-                1
-            ],
-            [
-                "models hide",
-                1
+                "why",
+                2
             ]
         ]
     }

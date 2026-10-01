@@ -1,228 +1,253 @@
 [
     {
+        "id": "https://www.nasa.gov/news-release/nasas-spacex-crew-13-launches-to-international-space-station/",
+        "title": "NASA’s SpaceX Crew-13 Launches to International Space Station",
+        "description": "Four crew members of NASA’s SpaceX Crew-13 mission launched at 11:10 a.m. EDT Thursday from Space Launch Complex 40 at Cape Canaveral Space Force Station in Florida for a science expedition aboard the International Space Station. “Crew-13 is another demonstration…",
+        "source": "NASA",
+        "published_at": "",
+        "url": "https://www.nasa.gov/news-release/nasas-spacex-crew-13-launches-to-international-space-station/",
+        "content_type": "News Release",
+        "topic": "Space"
+    },
+    {
+        "id": "https://www.nasa.gov/blogs/spacestation/2026/10/01/nasas-spacex-crew-13-reaches-orbit-news-conference-at-1245-p-m-edt/",
+        "title": "NASA’s SpaceX Crew-13 Reaches Orbit, News Conference at 1:10 p.m. EDT",
+        "description": "The SpaceX Dragon spacecraft carrying NASA astronauts Jessica Watkins and Luke Delaney, CSA (Canadian Space Agency) astronaut Joshua Kutryk, and Roscosmos cosmonaut Sergey Teteryatnikov to the International Space Station has safely reached orbit, separated from the Falcon 9’s second stage,…",
+        "source": "NASA",
+        "published_at": "2026-10-01",
+        "url": "https://www.nasa.gov/blogs/spacestation/2026/10/01/nasas-spacex-crew-13-reaches-orbit-news-conference-at-1245-p-m-edt/",
+        "content_type": "Blog",
+        "topic": "Space"
+    },
+    {
+        "id": "https://www.nasa.gov/blogs/spacestation/2026/10/01/falcon-9-first-stage-lands-second-stage-engine-shuts-down/",
+        "title": "Falcon 9 First Stage Lands; Second Stage Engine Shuts Down",
+        "description": "Back on Earth, the Falcon 9 rocket’s first stage completed its landing at SpaceX’s Landing Zone 40 at Cape Canaveral Space Force Station in Florida. The Falcon 9’s second stage has shut down, and soon Dragon will separate from second…",
+        "source": "NASA",
+        "published_at": "2026-10-01",
+        "url": "https://www.nasa.gov/blogs/spacestation/2026/10/01/falcon-9-first-stage-lands-second-stage-engine-shuts-down/",
+        "content_type": "Blog",
+        "topic": "Space"
+    },
+    {
+        "id": "https://www.nasa.gov/blogs/commercialcrew/2026/10/01/first-stage-main-engine-cutoff-first-second-stages-separate-5/",
+        "title": "First Stage Main Engine Cutoff; First, Second Stages Separate",
+        "description": "The Falcon 9 rocket has reached first stage main engine cutoff, or MECO, and the first and second stages have separated. Next, the Falcon 9’s second-stage engine will ignite. After separation, the Falcon 9 first stage performs a boostback burn…",
+        "source": "NASA",
+        "published_at": "2026-10-01",
+        "url": "https://www.nasa.gov/blogs/commercialcrew/2026/10/01/first-stage-main-engine-cutoff-first-second-stages-separate-5/",
+        "content_type": "Blog",
+        "topic": "Artificial Intelligence"
+    },
+    {
+        "id": "https://www.nasa.gov/blogs/commercialcrew/2026/10/01/rocket-reaches-max-q-5/",
+        "title": "Rocket Reaches Max Q",
+        "description": "SpaceX’s Falcon 9 rocket has reached Max Q, or maximum dynamic pressure. Max Q marks the moment of peak aerodynamic stress on the rocket. This happens as the vehicle is accelerating and climbing through thick lower atmosphere, creating a peak…",
+        "source": "NASA",
+        "published_at": "2026-10-01",
+        "url": "https://www.nasa.gov/blogs/commercialcrew/2026/10/01/rocket-reaches-max-q-5/",
+        "content_type": "Blog",
+        "topic": "Space"
+    },
+    {
+        "id": "https://www.nasa.gov/blogs/spacestation/2026/10/01/liftoff-nasas-spacex-crew-13-begins-journey-to-international-space-station/",
+        "title": "Liftoff! NASA’s SpaceX Crew-13 Begins Journey to International Space Station",
+        "description": "SpaceX’s Falcon 9 rocket and Dragon crew spacecraft rocketed into the blue Florida sky, as NASA astronauts Jessica Watkins and Luke Delaney, CSA (Canadian Space Agency) astronaut Joshua Kutryk, and Roscosmos cosmonaut Sergey Teteryatnikov began their approximately 7-hour, 50-minute journey…",
+        "source": "NASA",
+        "published_at": "2026-10-01",
+        "url": "https://www.nasa.gov/blogs/spacestation/2026/10/01/liftoff-nasas-spacex-crew-13-begins-journey-to-international-space-station/",
+        "content_type": "Blog",
+        "topic": "Space"
+    },
+    {
+        "id": "https://www.nasa.gov/blogs/commercialcrew/2026/10/01/up-next-nasas-spacex-crew-13-liftoff/",
+        "title": "Up Next: NASA’s SpaceX Crew-13 Liftoff",
+        "description": "Liftoff of the SpaceX Falcon 9 rocket and Dragon crew spacecraft Grace, with NASA astronauts Jessica Watkins and Luke Delaney, CSA (Canadian Space Agency) astronaut Joshua Kutryk, and Roscosmos cosmonaut Sergey Teteryatnikov, is now less than five minutes away. Everything…",
+        "source": "NASA",
+        "published_at": "2026-10-01",
+        "url": "https://www.nasa.gov/blogs/commercialcrew/2026/10/01/up-next-nasas-spacex-crew-13-liftoff/",
+        "content_type": "Blog",
+        "topic": "Space"
+    },
+    {
+        "id": "https://www.nasa.gov/blogs/commercialcrew/2026/10/01/nasas-spacex-crew-13-remains-on-schedule-launch-about-20-minutes-away/",
+        "title": "NASA’s SpaceX Crew-13 Remains on Schedule, Launch About 20 Minutes Away",
+        "description": "Fuel loading is complete on the Falcon 9 rocket’s second stage, and liquid oxygen loading has begun. Everything remains on target for the scheduled 11:10 a.m. EDT launch of NASA’s SpaceX Crew-13 mission from Cape Canaveral Space Force Station in…",
+        "source": "NASA",
+        "published_at": "2026-10-01",
+        "url": "https://www.nasa.gov/blogs/commercialcrew/2026/10/01/nasas-spacex-crew-13-remains-on-schedule-launch-about-20-minutes-away/",
+        "content_type": "Blog",
+        "topic": "Space"
+    },
+    {
+        "id": "https://www.nasa.gov/blogs/commercialcrew/2026/10/01/dragon-is-go-for-launch-falcon-9-fueling-underway-5/",
+        "title": "Dragon is ‘Go’ for Launch, Falcon 9 Fueling Underway",
+        "description": "Confirmation that the Dragon crew spacecraft is “go” for launch came through for NASA’s SpaceX Crew-13 mission. SpaceX had begun fueling the Falcon 9 rocket. Loading of rocket-grade kerosene (RP-1) and first stage liquid oxygen loading is underway. Fueling of…",
+        "source": "NASA",
+        "published_at": "2026-10-01",
+        "url": "https://www.nasa.gov/blogs/commercialcrew/2026/10/01/dragon-is-go-for-launch-falcon-9-fueling-underway-5/",
+        "content_type": "Blog",
+        "topic": "Space"
+    },
+    {
+        "id": "https://www.nasa.gov/blogs/commercialcrew/2026/10/01/crew-access-arm-retracted-6/",
+        "title": "Crew Access Arm Retracted",
+        "description": "The crew access arm has retracted, and the Dragon spacecraft’s launch escape system will be armed momentarily. This system allows NASA’s SpaceX Crew-13 crew members to escape safely in the unlikely event of an anomaly from the moment the system…",
+        "source": "NASA",
+        "published_at": "2026-10-01",
+        "url": "https://www.nasa.gov/blogs/commercialcrew/2026/10/01/crew-access-arm-retracted-6/",
+        "content_type": "Blog",
+        "topic": "Space"
+    },
+    {
+        "id": "https://www.nasa.gov/blogs/commercialcrew/2026/10/01/nasas-spacex-crew-13-mission-liftoff-now-just-an-hour-away/",
+        "title": "NASA’s SpaceX Crew-13 Mission Liftoff Now Just an Hour Away",
+        "description": "The SpaceX closeout team left the crew access arm, which will soon retract away from the Dragon spacecraft. Launch, set for 11:10 a.m. EDT, is now a little less than an hour away. Stay with us here on the blog…",
+        "source": "NASA",
+        "published_at": "2026-10-01",
+        "url": "https://www.nasa.gov/blogs/commercialcrew/2026/10/01/nasas-spacex-crew-13-mission-liftoff-now-just-an-hour-away/",
+        "content_type": "Blog",
+        "topic": "Space"
+    },
+    {
+        "id": "https://science.nasa.gov/missions/webb/nasas-webb-provides-crash-course-on-planet-shattering-collisions/",
+        "title": "NASA’s Webb Provides Crash Course on Planet-Shattering Collisions",
+        "description": "In the early history of our solar system, scientists theorize that a Mars-sized object called Theia smashed into the infant Earth, vaporizing massive amounts of rock and blasting it into space. Some of that material coalesced into the Moon, where…",
+        "source": "NASA",
+        "published_at": "2026-10-01",
+        "url": "https://science.nasa.gov/missions/webb/nasas-webb-provides-crash-course-on-planet-shattering-collisions/",
+        "content_type": "Article",
+        "topic": "Space"
+    },
+    {
+        "id": "https://www.nasa.gov/blogs/commercialcrew/2026/10/01/crew-13-research-advances-health-food-and-deep-space-science/",
+        "title": "Crew-13 Research Advances Health, Food, and Deep‑Space Science",
+        "description": "For over 25 years, people have continuously lived and worked aboard the International Space Station, advancing scientific knowledge and demonstrating new technologies that help prepare for human exploration of the Moon and Mars. NASA’s SpaceX Crew-13 crew members are set…",
+        "source": "NASA",
+        "published_at": "2026-10-01",
+        "url": "https://www.nasa.gov/blogs/commercialcrew/2026/10/01/crew-13-research-advances-health-food-and-deep-space-science/",
+        "content_type": "Blog",
+        "topic": "Space"
+    },
+    {
+        "id": "https://www.nasa.gov/blogs/commercialcrew/2026/10/01/meet-the-crew-of-nasas-spacex-crew-13/",
+        "title": "Meet the Crew of NASA’s SpaceX Crew-13",
+        "description": "This will be the second flight to the space station for Jessica Watkins, who was selected as a NASA astronaut in 2017. Watkins grew up in Lafayette, Colorado, and earned an undergraduate degree in geological and environmental sciences from Stanford…",
+        "source": "NASA",
+        "published_at": "2026-10-01",
+        "url": "https://www.nasa.gov/blogs/commercialcrew/2026/10/01/meet-the-crew-of-nasas-spacex-crew-13/",
+        "content_type": "Blog",
+        "topic": "Space"
+    },
+    {
+        "id": "https://www.nasa.gov/blogs/commercialcrew/2026/10/01/live-broadcast-coverage-of-nasas-spacex-crew-13-mission-begins/",
+        "title": "Live Streaming Coverage of NASA’s SpaceX Crew-13 Mission Begins",
+        "description": "NASA’s live streaming coverage of the agency’s SpaceX Crew-13 mission has now begun. Learn where to watch online: https://www.nasa.gov/live Liftoff is targeted for 11:10 a.m. EDT from Space Launch Complex 40 at Cape Canaveral Space Force Station in Florida. Crew-13…",
+        "source": "NASA",
+        "published_at": "2026-10-01",
+        "url": "https://www.nasa.gov/blogs/commercialcrew/2026/10/01/live-broadcast-coverage-of-nasas-spacex-crew-13-mission-begins/",
+        "content_type": "Blog",
+        "topic": "Space"
+    },
+    {
+        "id": "https://www.nasa.gov/blogs/commercialcrew/2026/10/01/hatch-closed-on-crew-13-spacex-dragon-spacecraft/",
+        "title": "Hatch Closed on Crew-13 SpaceX Dragon Spacecraft",
+        "description": "With communication checks complete, the hatch is closed on SpaceX’s Dragon spacecraft Grace. This is the spacecraft’s second flight to the International Space Station; it made its maiden flight in 2025 on Axiom Mission 4. Liftoff for Crew-13, including NASA…",
+        "source": "NASA",
+        "published_at": "2026-10-01",
+        "url": "https://www.nasa.gov/blogs/commercialcrew/2026/10/01/hatch-closed-on-crew-13-spacex-dragon-spacecraft/",
+        "content_type": "Blog",
+        "topic": "Space"
+    },
+    {
+        "id": "https://www.nasa.gov/blogs/commercialcrew/2026/10/01/nasas-spacex-crew-13-secured-inside-dragon-spacecraft-ready-for-hatch-closure/",
+        "title": "NASA’s SpaceX Crew-13 Secured Inside Dragon Spacecraft, Ready for Hatch Closure",
+        "description": "Teams have completed several milestones since the Crew-13 cadre entered the spacecraft, including conducting communication checks between Dragon and mission control, inspecting the crew’s spacesuits for any leaks, and rotating seats into a reclined position for launch. Once the “all…",
+        "source": "NASA",
+        "published_at": "2026-10-01",
+        "url": "https://www.nasa.gov/blogs/commercialcrew/2026/10/01/nasas-spacex-crew-13-secured-inside-dragon-spacecraft-ready-for-hatch-closure/",
+        "content_type": "Blog",
+        "topic": "Space"
+    },
+    {
+        "id": "https://www.nasa.gov/blogs/commercialcrew/2026/10/01/all-aboard-astronauts-climb-into-dragon-for-nasa-crewed-mission-3/",
+        "title": "All Aboard! Astronauts Climb Into Dragon for NASA Crewed Mission",
+        "description": "NASA’s SpaceX Crew-13 crew members now are boarding SpaceX’s Dragon spacecraft. Before entering the spacecraft, all four crewmates signed their names inside the White Room, the area at the end of the crew access arm that leads to the spacecraft.…",
+        "source": "NASA",
+        "published_at": "2026-10-01",
+        "url": "https://www.nasa.gov/blogs/commercialcrew/2026/10/01/all-aboard-astronauts-climb-into-dragon-for-nasa-crewed-mission-3/",
+        "content_type": "Blog",
+        "topic": "Space"
+    },
+    {
+        "id": "https://www.nasa.gov/blogs/commercialcrew/2026/10/01/nasas-spacex-crew-13-flight-crew-arrive-at-launch-pad/",
+        "title": "NASA’s SpaceX Crew-13 Flight Crew Arrive at Launch Pad",
+        "description": "NASA’s SpaceX Crew-13 crew have arrived at Space Launch Complex 40 at Cape Canaveral Space Force Station in Florida, where SpaceX’s Falcon 9 and Dragon spacecraft stands ready for launch. In the next few minutes, the crew will take the…",
+        "source": "NASA",
+        "published_at": "2026-10-01",
+        "url": "https://www.nasa.gov/blogs/commercialcrew/2026/10/01/nasas-spacex-crew-13-flight-crew-arrive-at-launch-pad/",
+        "content_type": "Blog",
+        "topic": "Space"
+    },
+    {
+        "id": "https://www.nasa.gov/blogs/spacestation/2026/10/01/next-stop-space-launch-complex-40/",
+        "title": "Next Stop: Space Launch Complex 40",
+        "description": "NASA’s SpaceX Crew-13 crew, including astronauts Jessica Watkins and Luke Delaney, CSA (Canadian Space Agency) astronaut Joshua Kutryk, and Roscosmos cosmonaut Sergey Teteryatnikov, departed Kennedy Space Center’s Neil A. Armstrong Operations and Checkout Building and are now on their way…",
+        "source": "NASA",
+        "published_at": "2026-10-01",
+        "url": "https://www.nasa.gov/blogs/spacestation/2026/10/01/next-stop-space-launch-complex-40/",
+        "content_type": "Blog",
+        "topic": "Space"
+    },
+    {
+        "id": "https://www.nasa.gov/blogs/commercialcrew/2026/10/01/nasas-spacex-crew-13-suited-ready-for-their-ride-to-launch-pad/",
+        "title": "NASA’s SpaceX Crew-13 Suited, Ready for Their Ride to Launch Pad",
+        "description": "Just moments ago, NASA’s SpaceX Crew-13 crew began the walk that every NASA astronaut has made since Apollo 7 in 1968, heading to the elevator and down through the double doors below the Neil A. Armstrong Building’s Astronaut Crew Quarters…",
+        "source": "NASA",
+        "published_at": "2026-10-01",
+        "url": "https://www.nasa.gov/blogs/commercialcrew/2026/10/01/nasas-spacex-crew-13-suited-ready-for-their-ride-to-launch-pad/",
+        "content_type": "Blog",
+        "topic": "Space"
+    },
+    {
+        "id": "https://www.nasa.gov/blogs/commercialcrew/2026/10/01/nasas-spacex-crew-13-suits-up-for-launch/",
+        "title": "NASA’s SpaceX Crew-13 Suits Up for Launch",
+        "description": "NASA astronauts Jessica Watkins and Luke Delaney, CSA (Canadian Space Agency) astronaut Joshua Kutryk, and Roscosmos cosmonaut Sergey Teteryatnikov are in the Astronaut Crew Quarters’ suit up room inside Kennedy Space Center’s Neil A. Armstrong Operations and Checkout Building in…",
+        "source": "NASA",
+        "published_at": "2026-10-01",
+        "url": "https://www.nasa.gov/blogs/commercialcrew/2026/10/01/nasas-spacex-crew-13-suits-up-for-launch/",
+        "content_type": "Blog",
+        "topic": "Space"
+    },
+    {
+        "id": "https://www.nasa.gov/blogs/commercialcrew/2026/10/01/a-look-at-todays-launch-milestones-3/",
+        "title": "A Look at Today’s Launch Milestones",
+        "description": "We’re about 4 hours away from the launch of NASA’s SpaceX Crew-13 mission. Below are key milestones leading up to launch, along with critical events that occur shortly after liftoff. The SpaceX Falcon 9 rocket and Dragon spacecraft are scheduled…",
+        "source": "NASA",
+        "published_at": "2026-10-01",
+        "url": "https://www.nasa.gov/blogs/commercialcrew/2026/10/01/a-look-at-todays-launch-milestones-3/",
+        "content_type": "Blog",
+        "topic": "Space"
+    },
+    {
+        "id": "https://www.nasa.gov/blogs/commercialcrew/2026/10/01/launch-day-for-nasas-spacex-crew-13-mission/",
+        "title": "Launch Day for NASA’s SpaceX Crew-13 Mission",
+        "description": "About 4.5 hours from now, NASA’s SpaceX Crew-13 mission carrying NASA astronauts Jessica Watkins and Luke Delaney, CSA (Canadian Space Agency) astronaut Joshua Kutryk, and Roscosmos cosmonaut Sergey Teteryatnikov to the International Space Station is scheduled to launch from Space…",
+        "source": "NASA",
+        "published_at": "2026-10-01",
+        "url": "https://www.nasa.gov/blogs/commercialcrew/2026/10/01/launch-day-for-nasas-spacex-crew-13-mission/",
+        "content_type": "Blog",
+        "topic": "Space"
+    },
+    {
         "id": "https://science.nasa.gov/image-article/apod-2026-october-1-harvest-moon-with-belt-of-venus-and-erupting-mount-etna/",
         "title": "APOD: 2026 October 1 – Harvest Moon with Erupting Mount Etna",
         "description": "APOD Science APOD APOD: 2026 October 1 –… Today’s APOD Archive Submissions Index Search Calendar RSS Education About Discuss APOD Astronomy Picture of the Day Discover the cosmos! Each day a different image or photograph of our fascinating universe…",
         "source": "NASA",
         "published_at": "",
         "url": "https://science.nasa.gov/image-article/apod-2026-october-1-harvest-moon-with-belt-of-venus-and-erupting-mount-etna/",
-        "category": "Image Article"
-    },
-    {
-        "id": "https://science.nasa.gov/earth/earth-observatory/an-agricultural-island-in-the-saskatchewan-river-delta/",
-        "title": "An Agricultural “Island” in the Saskatchewan River Delta",
-        "description": "Surrounded by wetlands, Manitoba’s northernmost farmland near The Pas turns from green to brown over the 2026 growing season.",
-        "source": "NASA",
-        "published_at": "2026-10-01",
-        "url": "https://science.nasa.gov/earth/earth-observatory/an-agricultural-island-in-the-saskatchewan-river-delta/",
-        "category": "Article"
-    },
-    {
-        "id": "https://science.nasa.gov/blog/curiosity-blog-sols-5016-5021-fantastic-minerals-and-how-to-detect-them/",
-        "title": "Curiosity Blog, Sols 5016–5021: Fantastic Minerals and How To Detect Them",
-        "description": "Written by Lucy Lim, Planetary Scientist at NASA Goddard Space Flight Center Earth planning date: Friday, Sept. 18, 2026 Curiosity surprised us at the beginning of the week with a change in rock texture — instead of the finely layered…",
-        "source": "NASA",
-        "published_at": "2026-09-30",
-        "url": "https://science.nasa.gov/blog/curiosity-blog-sols-5016-5021-fantastic-minerals-and-how-to-detect-them/",
-        "category": "Article"
-    },
-    {
-        "id": "https://science.nasa.gov/get-involved/citizen-science/help-overlap-zoo-reveal-cosmic-dust/",
-        "title": "Help Overlap Zoo Reveal Cosmic Dust",
-        "description": "Galaxies, vast collections of billions of stars, gas, and dust held together by gravity, are scattered across the immensity of space. But every so often, a coincidence occurs: Two galaxies line up from our point of view on Earth (or…",
-        "source": "NASA",
-        "published_at": "2026-09-30",
-        "url": "https://science.nasa.gov/get-involved/citizen-science/help-overlap-zoo-reveal-cosmic-dust/",
-        "category": "Article"
-    },
-    {
-        "id": "https://www.nasa.gov/news-release/nasa-adds-new-science-investigations-for-moon-base/",
-        "title": "NASA Adds New Science Investigations for Moon Base",
-        "description": "Editor’s note: This release was updated on Sept. 30, 2026, to correct the name of the DISCO payload. NASA selected three new scientific investigations and their payload suites to advance our knowledge of the Moon and help pave the way…",
-        "source": "NASA",
-        "published_at": "",
-        "url": "https://www.nasa.gov/news-release/nasa-adds-new-science-investigations-for-moon-base/",
-        "category": "News Release"
-    },
-    {
-        "id": "https://www.nasa.gov/news-release/nasa-awards-contract-to-develop-5g-communications-for-moon/",
-        "title": "NASA Awards Contract to Develop 5G Communications for Moon",
-        "description": "NASA has awarded Modulate Space Corporation a contract to develop key elements of a 5G communications system for use on the lunar surface with built-in Wi-Fi 6, for NASA’s Glenn Research Center in Cleveland. This accelerated effort is organized into…",
-        "source": "NASA",
-        "published_at": "",
-        "url": "https://www.nasa.gov/news-release/nasa-awards-contract-to-develop-5g-communications-for-moon/",
-        "category": "News Release"
-    },
-    {
-        "id": "https://www.nasa.gov/blogs/commercialcrew/2026/09/30/nasa-spacex-conclude-review-crew-13-go-for-launch/",
-        "title": "NASA, SpaceX Conclude Review, Crew-13 ‘Go’ for Launch",
-        "description": "NASA, SpaceX, and international partner teams completed the Launch Readiness Review for the agency’s Crew-13 mission to the International Space Station, with mission leaders polling “go” to proceed into the launch count. The team now will progress toward liftoff no earlier…",
-        "source": "NASA",
-        "published_at": "",
-        "url": "https://www.nasa.gov/blogs/commercialcrew/2026/09/30/nasa-spacex-conclude-review-crew-13-go-for-launch/",
-        "category": "Blog"
-    },
-    {
-        "id": "https://www.nasa.gov/blogs/spacestation/2026/09/30/station-prepares-to-welcome-crew-13-while-continuing-space-research/",
-        "title": "Station Prepares to Welcome Crew-13 while Continuing Space Research",
-        "description": "Expedition 75 is getting the International Space Station ready for the arrival of NASA’s SpaceX Crew-13 mission scheduled to launch and dock to the orbital outpost on Thursday, Oct. 1. In the meantime, space research and lab maintenance rounded out…",
-        "source": "NASA",
-        "published_at": "",
-        "url": "https://www.nasa.gov/blogs/spacestation/2026/09/30/station-prepares-to-welcome-crew-13-while-continuing-space-research/",
-        "category": "Blog"
-    },
-    {
-        "id": "https://science.nasa.gov/science-research/biological-physical-sciences/nasa-international-partners-advance-work-on-space-crops/",
-        "title": "NASA, International Partners Advance Work on Space Crops",
-        "description": "NASA, CSA (Canadian Space Agency), and the German Aerospace Center signed a joint statement of intent to begin coordinated, preparatory work toward an Earth-based demonstrator to learn how to grow crops on the Moon.",
-        "source": "NASA",
-        "published_at": "2026-09-30",
-        "url": "https://science.nasa.gov/science-research/biological-physical-sciences/nasa-international-partners-advance-work-on-space-crops/",
-        "category": "Article"
-    },
-    {
-        "id": "https://www.nasa.gov/image-article/star-trails/",
-        "title": "Star Trails",
-        "description": "This long-duration image shows star trails above Earth and the blue lights of fishing boats and the yellow lights of Indonesian cities stretching below the International Space Station as it orbited 258 miles above the Banda Sea on Sept. 20,…",
-        "source": "NASA",
-        "published_at": "",
-        "url": "https://www.nasa.gov/image-article/star-trails/",
-        "category": "Image Article"
-    },
-    {
-        "id": "https://www.nasa.gov/blogs/commercialcrew/2026/09/30/weather-55-favorable-for-thursday-crew-13-mission-launch/",
-        "title": "Weather 55% Favorable for Thursday Crew-13 Mission Launch",
-        "description": "Launch weather officers with Cape Canaveral Space Force Station’s 45th Weather Squadron predict a 55% chance of favorable weather conditions for the launch of NASA’s SpaceX Crew-13 mission at 11:10 a.m. EDT Thursday, Oct. 1. A ridge of high pressure…",
-        "source": "NASA",
-        "published_at": "",
-        "url": "https://www.nasa.gov/blogs/commercialcrew/2026/09/30/weather-55-favorable-for-thursday-crew-13-mission-launch/",
-        "category": "Blog"
-    },
-    {
-        "id": "https://science.nasa.gov/blogs/roman/2026/09/30/nasa-checks-roman-guidance-system-takes-first-coronagraph-observation/",
-        "title": "NASA Checks Roman Guidance System, Takes First Coronagraph Observation",
-        "description": "NASA’s Nancy Grace Roman Space Telescope’s fine-guidance system, which allows the observatory to lock very steadily onto its targets during observations, passed a spate of tests from Sept. 15 to 21. Then on Sept. 22, the mission’s Coronagraph Instrument opened…",
-        "source": "NASA",
-        "published_at": "",
-        "url": "https://science.nasa.gov/blogs/roman/2026/09/30/nasa-checks-roman-guidance-system-takes-first-coronagraph-observation/",
-        "category": "Blog"
-    },
-    {
-        "id": "https://www.nasa.gov/podcasts/small-steps-giant-leaps/human-factors-designing-systems-with-people-in-mind-part-2-of-2/",
-        "title": "Episode 183: Human Factors: Designing Systems with People in Mind – Part 2 of 2",
-        "description": "Dr. Cynthia Null, NASA Technical Fellow for Human Factors, discusses the myths of human limitations and how she got involved in the scientific discipline of human factors.",
-        "source": "NASA",
-        "published_at": "",
-        "url": "https://www.nasa.gov/podcasts/small-steps-giant-leaps/human-factors-designing-systems-with-people-in-mind-part-2-of-2/",
-        "category": ""
-    },
-    {
-        "id": "https://www.nasa.gov/blogs/wallops/2026/09/30/nasa-wallops-to-support-october-sounding-rocket-launch/",
-        "title": "NASA Wallops to support October Sounding Rocket Launch",
-        "description": "NASA’s Wallops Flight Facility in Virginia is scheduled to support a sounding rocket launch for the U.S. Navy in support of a Fleet Training Live Fire exercise on Thursday, Oct. 1. The rocket launch may be visible from the local…",
-        "source": "NASA",
-        "published_at": "",
-        "url": "https://www.nasa.gov/blogs/wallops/2026/09/30/nasa-wallops-to-support-october-sounding-rocket-launch/",
-        "category": "Blog"
-    },
-    {
-        "id": "https://science.nasa.gov/image-article/apod-2026-september-30-arp-78-peculiar-galaxy-in-aries/",
-        "title": "APOD: 2026 September 30 – Arp 78: Peculiar Galaxy in Aries",
-        "description": "APOD Science APOD APOD: 2026 September 30 –… Today’s APOD Archive Submissions Index Search Calendar RSS Education About Discuss APOD Astronomy Picture of the Day Discover the cosmos! Each day a different image or photograph of our fascinating universe…",
-        "source": "NASA",
-        "published_at": "",
-        "url": "https://science.nasa.gov/image-article/apod-2026-september-30-arp-78-peculiar-galaxy-in-aries/",
-        "category": "Image Article"
-    },
-    {
-        "id": "https://science.nasa.gov/earth/earth-observatory/powerful-storms-continue-to-prowl-the-pacific/",
-        "title": "Powerful Storms Continue to Prowl the Pacific",
-        "description": "Hurricanes Polo and Nolo sent destructive effects ashore amid an active season in the northeastern and central Pacific.",
-        "source": "NASA",
-        "published_at": "2026-09-30",
-        "url": "https://science.nasa.gov/earth/earth-observatory/powerful-storms-continue-to-prowl-the-pacific/",
-        "category": "Article"
-    },
-    {
-        "id": "https://www.nasa.gov/directorates/esdmd/artemis-campaign-development-division/human-landing-system-program/nasa-opens-2027-human-lander-challenge-for-lunar-communications/",
-        "title": "NASA Opens 2027 Human Lander Challenge for Lunar Communications",
-        "description": "NASA’s 2027 Human Lander Challenge is seeking ideas from college and university students to help address one of the most critical needs for sustained lunar exploration: reliable communications. As NASA prepares for long-term human presence on the Moon through the…",
-        "source": "NASA",
-        "published_at": "2026-09-29",
-        "url": "https://www.nasa.gov/directorates/esdmd/artemis-campaign-development-division/human-landing-system-program/nasa-opens-2027-human-lander-challenge-for-lunar-communications/",
-        "category": "Article"
-    },
-    {
-        "id": "https://www.nasa.gov/news-release/nasa-awards-orbital-safety-analysis-support-services-contract/",
-        "title": "NASA Awards Orbital Safety Analysis Support Services Contract",
-        "description": "NASA has awarded a contract to Omitron Inc. for the acquisition of orbital safety analysis services, which provide for critical protection of NASA spaceflight assets and astronaut lives. This indefinite-delivery contract is valued at approximately $23.5 million over a five-year…",
-        "source": "NASA",
-        "published_at": "",
-        "url": "https://www.nasa.gov/news-release/nasa-awards-orbital-safety-analysis-support-services-contract/",
-        "category": "News Release"
-    },
-    {
-        "id": "https://www.nasa.gov/news-release/nasa-features-exploration-science-at-international-space-conference/",
-        "title": "NASA Features Exploration, Science at International Space Conference",
-        "description": "Editor’s Note: This advisory was updated on Sept. 30, 2026, to reflect additional NASA activities. NASA will participate in the 77th International Astronautical Congress (IAC) in Antalya, Türkiye, from Monday, Oct. 5, to Friday, Oct. 9, highlighting America’s leadership in…",
-        "source": "NASA",
-        "published_at": "",
-        "url": "https://www.nasa.gov/news-release/nasa-features-exploration-science-at-international-space-conference/",
-        "category": "News Release"
-    },
-    {
-        "id": "https://science.nasa.gov/blogs/notes-from-the-field/2026/09/29/catching-the-light-taking-the-pulse-of-puerto-ricos-forests/",
-        "title": "Catching the Light: Taking the Pulse of Puerto Rico’s Forests",
-        "description": "Our team from NASA Goddard Space Flight Center’s Biospheric Sciences Laboratory is working to improve how satellites monitor plant health.",
-        "source": "NASA",
-        "published_at": "",
-        "url": "https://science.nasa.gov/blogs/notes-from-the-field/2026/09/29/catching-the-light-taking-the-pulse-of-puerto-ricos-forests/",
-        "category": "Blog"
-    },
-    {
-        "id": "https://www.nasa.gov/news-release/nasa-adds-blue-origin-new-glenn-9x4-to-launch-services-contract/",
-        "title": "NASA Adds Blue Origin New Glenn 9×4 to Launch Services Contract",
-        "description": "In accordance with a contract on-ramp clause, NASA has added Blue Origin’s New Glenn 9×4 launch service to the NASA Launch Services (NLS) II contract. The New Glenn 9×4 launch service will be available to NASA’s Launch Services Program Office…",
-        "source": "NASA",
-        "published_at": "",
-        "url": "https://www.nasa.gov/news-release/nasa-adds-blue-origin-new-glenn-9x4-to-launch-services-contract/",
-        "category": "News Release"
-    },
-    {
-        "id": "https://www.nasa.gov/blogs/general-blog/2026/09/29/station-quartet-preps-for-departure-amidst-air-and-water-quality-checks/",
-        "title": "Station Quartet Preps for Departure Amidst Air and Water Quality Checks",
-        "description": "Four Expedition 75 crew members spent Tuesday packing up and preparing the SpaceX Dragon spacecraft they will ride home in for its upcoming departure. Air and water quality checks and Earth observations rounded out the schedule aboard the International Space…",
-        "source": "NASA",
-        "published_at": "",
-        "url": "https://www.nasa.gov/blogs/general-blog/2026/09/29/station-quartet-preps-for-departure-amidst-air-and-water-quality-checks/",
-        "category": "Blog"
-    },
-    {
-        "id": "https://www.nasa.gov/news-release/nasa-sets-crew-13-launch-docking-coverage/",
-        "title": "NASA Sets Crew-13 Launch, Docking Coverage",
-        "description": "Editor’s note: This advisory was updated Sept. 30, 2026 with an updated time for the prelaunch news conference. NASA will provide live coverage of prelaunch, launch, and docking activities for the agency’s SpaceX Crew‑13 mission to the International Space Station.…",
-        "source": "NASA",
-        "published_at": "",
-        "url": "https://www.nasa.gov/news-release/nasa-sets-crew-13-launch-docking-coverage/",
-        "category": "News Release"
-    },
-    {
-        "id": "https://www.nasa.gov/blogs/commercialcrew/2026/09/29/weather-60-go-for-nasas-spacex-crew-13-launch/",
-        "title": "Weather 60% ‘Go’ for NASA’s SpaceX Crew-13 Launch",
-        "description": "The U.S. Space Force’s 45th Weather Squadron predicts a 60% chance of favorable weather for Thursday’s launch of NASA’s SpaceX Crew-13 mission. The primary weather concerns are the cumulus cloud rule and flight through precipitation. The Crew-13 mission will launch…",
-        "source": "NASA",
-        "published_at": "",
-        "url": "https://www.nasa.gov/blogs/commercialcrew/2026/09/29/weather-60-go-for-nasas-spacex-crew-13-launch/",
-        "category": "Blog"
-    },
-    {
-        "id": "https://www.nasa.gov/image-article/crew-13-rocket-and-spacecraft-at-launch-pad/",
-        "title": "Crew-13 Rocket and Spacecraft at Launch Pad",
-        "description": "Ahead of NASA’s SpaceX Crew-13 mission launch, a SpaceX Falcon 9 rocket and Dragon spacecraft are vertical at the launch pad of Space Launch Complex 40 at Cape Canaveral Space Force Station in Florida in this Sept. 27, 2026, photo.…",
-        "source": "NASA",
-        "published_at": "",
-        "url": "https://www.nasa.gov/image-article/crew-13-rocket-and-spacecraft-at-launch-pad/",
-        "category": "Image Article"
+        "content_type": "Image Article",
+        "topic": "Space"
     },
     {
         "id": "https://www.manilatimes.net/2026/09/30/world/americas-emea/over-100-israeli-settlers-attack-west-bank-village/2435012",
@@ -231,7 +256,8 @@
         "source": "Wikipedia",
         "published_at": "2026-09-29",
         "url": "https://www.manilatimes.net/2026/09/30/world/americas-emea/over-100-israeli-settlers-attack-west-bank-village/2435012",
-        "category": "Gaza war",
+        "content_type": "Current Event",
+        "topic": "Gaza war",
         "source_links": [
             "https://www.manilatimes.net/2026/09/30/world/americas-emea/over-100-israeli-settlers-attack-west-bank-village/2435012"
         ]
@@ -243,7 +269,8 @@
         "source": "Wikipedia",
         "published_at": "2026-09-29",
         "url": "https://www.reuters.com/world/africa/puntland-forces-rescue-another-hijacked-ship-somali-pirates-2026-09-29/",
-        "category": "Somali Civil War",
+        "content_type": "Current Event",
+        "topic": "Somali Civil War",
         "source_links": [
             "https://www.reuters.com/world/africa/puntland-forces-rescue-another-hijacked-ship-somali-pirates-2026-09-29/",
             "https://www.somaliguardian.com/news/somalia-news/somalia-puntland-frees-second-tanker-from-somali-pirates/",
@@ -257,7 +284,8 @@
         "source": "Wikipedia",
         "published_at": "2026-09-29",
         "url": "https://www.reuters.com/business/media-telecom/ugandan-kingdom-enthrones-ex-tv-anchor-after-succession-fight-2026-09-29/",
-        "category": "coronation",
+        "content_type": "Current Event",
+        "topic": "coronation",
         "source_links": [
             "https://www.reuters.com/business/media-telecom/ugandan-kingdom-enthrones-ex-tv-anchor-after-succession-fight-2026-09-29/"
         ]
@@ -269,7 +297,8 @@
         "source": "Wikipedia",
         "published_at": "2026-09-29",
         "url": "https://www.france24.com/en/live-news/20260929-australian-central-bank-lifts-key-interest-rate-to-15-year-high",
-        "category": "Economic impact of the 2026 Iran war",
+        "content_type": "Current Event",
+        "topic": "Economic impact of the 2026 Iran war",
         "source_links": [
             "https://www.france24.com/en/live-news/20260929-australian-central-bank-lifts-key-interest-rate-to-15-year-high",
             "https://www.reuters.com/world/asia-pacific/australias-central-bank-raises-cash-rate-15-year-peak-2026-09-29/"
@@ -282,9 +311,23 @@
         "source": "Wikipedia",
         "published_at": "2026-09-29",
         "url": "https://www.france24.com/en/live-news/20260929-swiss-regulator-concludes-julius-baer-bank-probe",
-        "category": "Julius Baer Group controversies",
+        "content_type": "Current Event",
+        "topic": "Julius Baer Group controversies",
         "source_links": [
             "https://www.france24.com/en/live-news/20260929-swiss-regulator-concludes-julius-baer-bank-probe"
+        ]
+    },
+    {
+        "id": "https://news.sky.com/story/teenagers-killed-after-car-went-into-river-wear-in-sunderland-named-by-police-13593730",
+        "title": "A vehicle crashes through a fence and plunges into the River Wear in Sunderland, Tyne and Wear, England, killing three teenagers. The driver of the vehicle, also a teenager, is later arrested by Northumbria Police.",
+        "description": "A vehicle crashes through a fence and plunges into the River Wear in Sunderland, Tyne and Wear, England, killing three teenagers. The driver of the vehicle, also a teenager, is later arrested by Northumbria Police.",
+        "source": "Wikipedia",
+        "published_at": "2026-09-29",
+        "url": "https://news.sky.com/story/teenagers-killed-after-car-went-into-river-wear-in-sunderland-named-by-police-13593730",
+        "content_type": "Current Event",
+        "topic": "River Wear",
+        "source_links": [
+            "https://news.sky.com/story/teenagers-killed-after-car-went-into-river-wear-in-sunderland-named-by-police-13593730"
         ]
     },
     {
@@ -294,7 +337,8 @@
         "source": "Wikipedia",
         "published_at": "2026-09-29",
         "url": "https://www.france24.com/en/live-news/20260929-tokyo-suffers-longest-streak-of-rainy-days-on-record",
-        "category": "Japan Meteorological Agency",
+        "content_type": "Current Event",
+        "topic": "Japan Meteorological Agency",
         "source_links": [
             "https://www.france24.com/en/live-news/20260929-tokyo-suffers-longest-streak-of-rainy-days-on-record",
             "https://www.bloomberg.com/news/articles/2026-09-29/tokyo-s-longest-streak-of-rain-on-record-adds-to-price-woes"
@@ -307,7 +351,8 @@
         "source": "Wikipedia",
         "published_at": "2026-09-29",
         "url": "https://www.usatoday.com/story/money/consumer-protection/recalls-alerts/2026/09/28/blood-pressure-medication-recall/91991981007/",
-        "category": "Food and Drug Administration",
+        "content_type": "Current Event",
+        "topic": "Food and Drug Administration",
         "source_links": [
             "https://www.usatoday.com/story/money/consumer-protection/recalls-alerts/2026/09/28/blood-pressure-medication-recall/91991981007/"
         ]
@@ -319,7 +364,8 @@
         "source": "Wikipedia",
         "published_at": "2026-09-29",
         "url": "https://www.rfi.fr/en/international-news/20260929-north-korean-dmz-landmine-blasts-violation-of-armistice-seoul",
-        "category": "North Korea–South Korea relations",
+        "content_type": "Current Event",
+        "topic": "North Korea–South Korea relations",
         "source_links": [
             "https://www.rfi.fr/en/international-news/20260929-north-korean-dmz-landmine-blasts-violation-of-armistice-seoul"
         ]
@@ -331,7 +377,8 @@
         "source": "Wikipedia",
         "published_at": "2026-09-29",
         "url": "https://www.rfi.fr/en/international-news/20260929-un-security-council-extends-haiti-mission-by-6-months",
-        "category": "Haitian crisis",
+        "content_type": "Current Event",
+        "topic": "Haitian crisis",
         "source_links": [
             "https://www.rfi.fr/en/international-news/20260929-un-security-council-extends-haiti-mission-by-6-months"
         ]
@@ -343,7 +390,8 @@
         "source": "Wikipedia",
         "published_at": "2026-09-29",
         "url": "https://today.rtl.lu/news/world/malaysia-starts-sending-myanmar-migrants-home-1215114466",
-        "category": "Malaysia–Myanmar relations",
+        "content_type": "Current Event",
+        "topic": "Malaysia–Myanmar relations",
         "source_links": [
             "https://today.rtl.lu/news/world/malaysia-starts-sending-myanmar-migrants-home-1215114466"
         ]
@@ -355,7 +403,8 @@
         "source": "Wikipedia",
         "published_at": "2026-09-29",
         "url": "https://www.reuters.com/world/asia-pacific/myanmar-arrests-21-over-alleged-donations-opposition-linked-fundraising-platform-2026-09-29/",
-        "category": "Myanmar civil war",
+        "content_type": "Current Event",
+        "topic": "Myanmar civil war",
         "source_links": [
             "https://www.reuters.com/world/asia-pacific/myanmar-arrests-21-over-alleged-donations-opposition-linked-fundraising-platform-2026-09-29/"
         ]
@@ -367,7 +416,8 @@
         "source": "Wikipedia",
         "published_at": "2026-09-29",
         "url": "https://www.euronews.com/2026/09/29/slovakia-school-attack-leaves-one-dead-and-two-injured-emergency-workers-say",
-        "category": "2026 Staškov school stabbing",
+        "content_type": "Current Event",
+        "topic": "2026 Staškov school stabbing",
         "source_links": [
             "https://www.euronews.com/2026/09/29/slovakia-school-attack-leaves-one-dead-and-two-injured-emergency-workers-say"
         ]
@@ -379,7 +429,8 @@
         "source": "Wikipedia",
         "published_at": "2026-09-29",
         "url": "https://oem.com.mx/elheraldodechihuahua/local/rechaza-scjn-que-chihuahua-pueda-anular-elecciones-por-intervencion-del-crimen-organizado-32345286",
-        "category": "Crime in Mexico",
+        "content_type": "Current Event",
+        "topic": "Crime in Mexico",
         "source_links": [
             "https://oem.com.mx/elheraldodechihuahua/local/rechaza-scjn-que-chihuahua-pueda-anular-elecciones-por-intervencion-del-crimen-organizado-32345286"
         ]
@@ -391,7 +442,8 @@
         "source": "Wikipedia",
         "published_at": "2026-09-29",
         "url": "https://news.sky.com/story/police-arrest-17-in-london-as-part-of-investigation-into-suspected-organised-crime-group-13592654",
-        "category": "police officers",
+        "content_type": "Current Event",
+        "topic": "police officers",
         "source_links": [
             "https://news.sky.com/story/police-arrest-17-in-london-as-part-of-investigation-into-suspected-organised-crime-group-13592654"
         ]
@@ -403,7 +455,8 @@
         "source": "Wikipedia",
         "published_at": "2026-09-29",
         "url": "https://www.bbc.com/news/articles/cw14d37446d8o",
-        "category": "Six Flags Magic Mountain",
+        "content_type": "Current Event",
+        "topic": "Six Flags Magic Mountain",
         "source_links": [
             "https://www.bbc.com/news/articles/cw14d37446d8o"
         ]
@@ -415,7 +468,8 @@
         "source": "Wikipedia",
         "published_at": "2026-09-29",
         "url": "https://www.aljazeera.com/news/2026/9/29/truly-historic-moroccos-king-appoints-first-woman-prime-minister",
-        "category": "2026 Moroccan general election",
+        "content_type": "Current Event",
+        "topic": "2026 Moroccan general election",
         "source_links": [
             "https://www.aljazeera.com/news/2026/9/29/truly-historic-moroccos-king-appoints-first-woman-prime-minister",
             "https://www.reuters.com/world/africa/moroccos-king-appoints-first-woman-pm-following-sept-23-election-2026-09-29/"
@@ -428,7 +482,8 @@
         "source": "Wikipedia",
         "published_at": "2026-09-29",
         "url": "https://www.rfi.fr/en/sports/20260929-ruthless-an-makes-history-to-retain-asian-games-badminton-crown",
-        "category": "2026 Asian Games",
+        "content_type": "Current Event",
+        "topic": "2026 Asian Games",
         "source_links": [
             "https://www.rfi.fr/en/sports/20260929-ruthless-an-makes-history-to-retain-asian-games-badminton-crown"
         ]
@@ -440,99 +495,510 @@
         "source": "Wikipedia",
         "published_at": "2026-09-29",
         "url": "https://apnews.com/article/man-city-guilty-financial-charges-premier-league-d2da2890d5a18b1cf234d39fb40c2a3d",
-        "category": "Manchester City F.C. financial breaches scandal",
+        "content_type": "Current Event",
+        "topic": "Manchester City F.C. financial breaches scandal",
         "source_links": [
             "https://apnews.com/article/man-city-guilty-financial-charges-premier-league-d2da2890d5a18b1cf234d39fb40c2a3d"
         ]
     },
     {
-        "id": "49918117",
-        "title": "Language models will hide 'bad news' in reports by default",
+        "id": "49924275",
+        "title": "ParadeDB Search Performance Improvements",
         "description": "",
         "source": "Hacker News",
-        "published_at": "2026-10-01 11:10:23",
-        "url": "https://www.unite.ai/language-models-will-hide-bad-news-in-reports-by-default/",
-        "category": "Technology"
+        "published_at": "2026-10-01 22:35:01",
+        "url": "https://www.paradedb.com/blog/opening-a-closed-tin",
+        "content_type": "Story",
+        "topic": "Other"
     },
     {
-        "id": "49918086",
-        "title": "The Life of Antony",
+        "id": "49924268",
+        "title": "Ask HN: What broke when you added the second agent?",
         "description": "",
         "source": "Hacker News",
-        "published_at": "2026-10-01 11:05:02",
-        "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Plutarch/Lives/Antony%2A.html?",
-        "category": "Technology"
+        "published_at": "2026-10-01 22:33:54",
+        "url": "https://news.ycombinator.com/item?id=49924268",
+        "content_type": "Story",
+        "topic": "Other"
     },
     {
-        "id": "49918045",
-        "title": "Show HN: MeetTwins, an AI that attends Google Meet and won't improvise",
+        "id": "49924260",
+        "title": "Show HN: I got sick of sequencers and CRMs, so I built this",
         "description": "",
         "source": "Hacker News",
-        "published_at": "2026-10-01 10:58:41",
-        "url": "https://www.theregister.com/ai-and-ml/2026/09/30/show-colleagues-how-much-you-care-by-sending-an-ai-avatar-to-your-google-meet-call/5300205",
-        "category": "Technology"
+        "published_at": "2026-10-01 22:33:23",
+        "url": "https://withember.ai",
+        "content_type": "Story",
+        "topic": "Other"
     },
     {
-        "id": "49918027",
-        "title": "Connection allowlists: Secure your web application's network access",
+        "id": "49924255",
+        "title": "I Buried a Honda Civic Si in My Yard",
         "description": "",
         "source": "Hacker News",
-        "published_at": "2026-10-01 10:55:14",
-        "url": "https://developer.chrome.com/blog/connection-allowlist-announcement",
-        "category": "Technology"
+        "published_at": "2026-10-01 22:33:06",
+        "url": "https://austinwhite.org/posts/i-buried-a-honda-civic-si-in-my-yard",
+        "content_type": "Story",
+        "topic": "Other"
     },
     {
-        "id": "49917954",
-        "title": "Per Aspera Ad Profundum",
+        "id": "49924236",
+        "title": "I was always wondering, how it feels to switch between AI tools, so I tried it",
         "description": "",
         "source": "Hacker News",
-        "published_at": "2026-10-01 10:39:47",
-        "url": "https://profane-tmesis.info/ad-profundum",
-        "category": "Technology"
+        "published_at": "2026-10-01 22:31:42",
+        "url": "https://twitter.com/SSShken/status/2105696802666061863",
+        "content_type": "Story",
+        "topic": "Artificial Intelligence"
     },
     {
-        "id": "49917904",
-        "title": "PKLM Sandbox – Lightweight open-source repository for PKLM Core",
+        "id": "49924221",
+        "title": "Ideas for Fixing U.S. Schools, Ranked by Experts",
         "description": "",
         "source": "Hacker News",
-        "published_at": "2026-10-01 10:29:13",
-        "url": "https://github.com/TheImmortalPython/pklm-sandbox",
-        "category": "Technology"
+        "published_at": "2026-10-01 22:30:23",
+        "url": "https://www.nytimes.com/2026/09/28/upshot/ideas-fixing-schools-ranked.html",
+        "content_type": "Story",
+        "topic": "Other"
     },
     {
-        "id": "49917900",
-        "title": "Differences Between `Foldl` and `Foldr`",
+        "id": "49924208",
+        "title": "Show HN: Keel – Give your agent a typed strategy language, not a trading account",
         "description": "",
         "source": "Hacker News",
-        "published_at": "2026-10-01 10:28:03",
-        "url": "https://blog.haskell.org/foldl-and-foldr/",
-        "category": "Technology"
+        "published_at": "2026-10-01 22:29:52",
+        "url": "https://usekeel.io/how-it-works",
+        "content_type": "Story",
+        "topic": "Other"
     },
     {
-        "id": "49917899",
-        "title": "Global bond sell-off deepens as Asian yields jump",
+        "id": "49924179",
+        "title": "Git 3.0's upcoming SHA-256 default will be a costly mistake",
         "description": "",
         "source": "Hacker News",
-        "published_at": "2026-10-01 10:28:02",
-        "url": "https://www.ft.com/content/e485a228-1efe-426b-addc-26069ba48bf3",
-        "category": "Technology"
+        "published_at": "2026-10-01 22:27:03",
+        "url": "https://blog.gitbutler.com/git-3-sha-256",
+        "content_type": "Story",
+        "topic": "Software Development"
     },
     {
-        "id": "49917879",
-        "title": "Bill Gates's Blunt Warning on A.I",
+        "id": "49924178",
+        "title": "Why my env variables were undefined in production (and how to fix it)",
         "description": "",
         "source": "Hacker News",
-        "published_at": "2026-10-01 10:25:07",
-        "url": "https://www.nytimes.com/2026/09/29/opinion/ezra-klein-podcast-bill-gates.html",
-        "category": "Technology"
+        "published_at": "2026-10-01 22:27:00",
+        "url": "https://codex-blog-6v6.pages.dev/blog/env-vars-undefined-production/",
+        "content_type": "Story",
+        "topic": "Other"
     },
     {
-        "id": "49917863",
-        "title": "Show HN: Vietnam Tender Intelligence – gov procurement data, AI-agent ready",
+        "id": "49924160",
+        "title": "Need Unity and Unreal testers for code stitching tool",
         "description": "",
         "source": "Hacker News",
-        "published_at": "2026-10-01 10:20:24",
-        "url": "https://apify.com/donerightlabs/tender-intelligence",
-        "category": "Technology"
+        "published_at": "2026-10-01 22:25:17",
+        "url": "https://news.ycombinator.com/item?id=49924160",
+        "content_type": "Story",
+        "topic": "Other"
+    },
+    {
+        "id": "49924125",
+        "title": "Contingent Staffing Services for US Companies",
+        "description": "",
+        "source": "Hacker News",
+        "published_at": "2026-10-01 22:23:05",
+        "url": "https://news.ycombinator.com/item?id=49924125",
+        "content_type": "Story",
+        "topic": "Other"
+    },
+    {
+        "id": "49924121",
+        "title": "More like SC-Forth-thousand, am I right?",
+        "description": "",
+        "source": "Hacker News",
+        "published_at": "2026-10-01 22:22:38",
+        "url": "https://www.leadedsolder.com/2026/10/01/rc2026-10-sg1000-forth-port.html",
+        "content_type": "Story",
+        "topic": "Other"
+    },
+    {
+        "id": "49924112",
+        "title": "Making My Own YouTube with Ytdl-Sub and Jellyfin",
+        "description": "",
+        "source": "Hacker News",
+        "published_at": "2026-10-01 22:21:57",
+        "url": "https://michaelenger.com/blog/replacing-youtube/",
+        "content_type": "Story",
+        "topic": "Other"
+    },
+    {
+        "id": "49924074",
+        "title": "QR Codes that can be read multiple different ways",
+        "description": "",
+        "source": "Hacker News",
+        "published_at": "2026-10-01 22:19:01",
+        "url": "https://halcy.de/blog/2026/10/01/qr-codes-that-can-be-read-multiple-different-ways/",
+        "content_type": "Story",
+        "topic": "Other"
+    },
+    {
+        "id": "49924066",
+        "title": "Secret watermark labels proteins as 'made by AI'",
+        "description": "",
+        "source": "Hacker News",
+        "published_at": "2026-10-01 22:17:56",
+        "url": "https://www.nature.com/articles/d41586-026-03033-y",
+        "content_type": "Story",
+        "topic": "Artificial Intelligence"
+    },
+    {
+        "id": "49924063",
+        "title": "U.S. Welcomes Italy into Pax Silica Initiative",
+        "description": "",
+        "source": "Hacker News",
+        "published_at": "2026-10-01 22:17:46",
+        "url": "https://www.state.gov/releases/office-of-the-spokesperson/2026/07/us-welcomes-italy-into-pax-silica-initiative",
+        "content_type": "Story",
+        "topic": "Other"
+    },
+    {
+        "id": "49924057",
+        "title": "AI Torture Chamber",
+        "description": "",
+        "source": "Hacker News",
+        "published_at": "2026-10-01 22:17:19",
+        "url": "https://clanker.church/",
+        "content_type": "Story",
+        "topic": "Artificial Intelligence"
+    },
+    {
+        "id": "49924055",
+        "title": "Speech May Contain Hidden Information About How Fast You're Aging",
+        "description": "",
+        "source": "Hacker News",
+        "published_at": "2026-10-01 22:17:11",
+        "url": "https://nautil.us/your-speech-may-contain-hidden-information-about-how-fast-youre-aging-1285433",
+        "content_type": "Story",
+        "topic": "Artificial Intelligence"
+    },
+    {
+        "id": "49924050",
+        "title": "Pidgin 3.0 Alpha 3 2.97.0 has been released",
+        "description": "",
+        "source": "Hacker News",
+        "published_at": "2026-10-01 22:16:55",
+        "url": "https://discourse.imfreedom.org/t/pidgin-3-0-alpha-3-2-97-0-has-been-released/436",
+        "content_type": "Story",
+        "topic": "Other"
+    },
+    {
+        "id": "49924046",
+        "title": "TDK CLI – service.json to a local Docker/Tilt stack, no cluster",
+        "description": "",
+        "source": "Hacker News",
+        "published_at": "2026-10-01 22:16:48",
+        "url": "https://github.com/tdk-landscape/tdk-cli-core",
+        "content_type": "Story",
+        "topic": "Other"
+    },
+    {
+        "id": "49924045",
+        "title": "How Many Electricians Does It Take to Change a Light Bulb?",
+        "description": "",
+        "source": "Hacker News",
+        "published_at": "2026-10-01 22:16:47",
+        "url": "https://www.fasttrackfemme.com/p/how-many-electricians-does-it-take",
+        "content_type": "Story",
+        "topic": "Other"
+    },
+    {
+        "id": "49924026",
+        "title": "What Would John Maynard Keynes Say About A.I.? The Keynes Bot Told Us",
+        "description": "",
+        "source": "Hacker News",
+        "published_at": "2026-10-01 22:15:13",
+        "url": "https://www.nytimes.com/2026/09/30/opinion/john-maynard-keynes-ai-economist.html",
+        "content_type": "Story",
+        "topic": "Other"
+    },
+    {
+        "id": "49924017",
+        "title": "Old School RuneScape mod explains cause of bug that broke a fletching knife",
+        "description": "",
+        "source": "Hacker News",
+        "published_at": "2026-10-01 22:14:44",
+        "url": "https://www.reddit.com/r/2007scape/s/0QgUVRpIQ1",
+        "content_type": "Story",
+        "topic": "Artificial Intelligence"
+    },
+    {
+        "id": "49924014",
+        "title": "G.Network launches 8.5 Gbps full fibre service in London",
+        "description": "",
+        "source": "Hacker News",
+        "published_at": "2026-10-01 22:14:35",
+        "url": "https://www.thinkbroadband.com/news/g-network-launches-8-5-gbps-full-fibre-service-in-london",
+        "content_type": "Story",
+        "topic": "Space"
+    },
+    {
+        "id": "49924008",
+        "title": "Decades After Watergate, Justice Department Reviews Whether Nixon Got a Raw Deal",
+        "description": "",
+        "source": "Hacker News",
+        "published_at": "2026-10-01 22:13:59",
+        "url": "https://www.wsj.com/us-news/law/decades-after-watergate-justice-department-reviews-whether-nixon-got-a-raw-deal-8e25380f",
+        "content_type": "Story",
+        "topic": "Other"
+    },
+    {
+        "id": "49924000",
+        "title": "TrickJev – Change Jev's mind one word or sentence at a time",
+        "description": "",
+        "source": "Hacker News",
+        "published_at": "2026-10-01 22:12:42",
+        "url": "https://trickjev.men/",
+        "content_type": "Story",
+        "topic": "Other"
+    },
+    {
+        "id": "49923989",
+        "title": "Merlin Pro on the Recurse Center Apple IIe",
+        "description": "",
+        "source": "Hacker News",
+        "published_at": "2026-10-01 22:12:01",
+        "url": "https://ksionda.me/apple-2-jumping-in/#intro",
+        "content_type": "Story",
+        "topic": "Other"
+    },
+    {
+        "id": "49923981",
+        "title": "Maven Central Publishing Limits",
+        "description": "",
+        "source": "Hacker News",
+        "published_at": "2026-10-01 22:11:16",
+        "url": "https://central.sonatype.org/publish/maven-central-publishing-limits/",
+        "content_type": "Story",
+        "topic": "Other"
+    },
+    {
+        "id": "49923979",
+        "title": "Listening Practice for Niche Languages",
+        "description": "",
+        "source": "Hacker News",
+        "published_at": "2026-10-01 22:11:10",
+        "url": "https://yue.dialoguetape.com/",
+        "content_type": "Story",
+        "topic": "Other"
+    },
+    {
+        "id": "49923976",
+        "title": "Why do OpenAI's GPT-2 weights beat mine? Part five: data quality",
+        "description": "",
+        "source": "Hacker News",
+        "published_at": "2026-10-01 22:10:52",
+        "url": "https://www.gilesthomas.com/2026/10/why-do-openai-gpt2-weights-beat-mine-5-data-quality",
+        "content_type": "Story",
+        "topic": "Artificial Intelligence"
+    },
+    {
+        "id": "49923967",
+        "title": "WSL containers is now generally available",
+        "description": "",
+        "source": "Hacker News",
+        "published_at": "2026-10-01 22:09:59",
+        "url": "https://blogs.windows.com/windowsdeveloper/2026/09/29/wsl-containers-now-generally-available/",
+        "content_type": "Story",
+        "topic": "Artificial Intelligence"
+    },
+    {
+        "id": "49923959",
+        "title": "RAG debugger v0.3.0 is live",
+        "description": "",
+        "source": "Hacker News",
+        "published_at": "2026-10-01 22:09:03",
+        "url": "https://github.com/mohamedaminefezzani/rag-debugger",
+        "content_type": "Story",
+        "topic": "Other"
+    },
+    {
+        "id": "49923944",
+        "title": "Breaking the Cipher of the Napoleonic war briefing, unread for 217 years",
+        "description": "",
+        "source": "Hacker News",
+        "published_at": "2026-10-01 22:07:44",
+        "url": "https://carter.church/writeups/the-letter-to-marmont/",
+        "content_type": "Story",
+        "topic": "Other"
+    },
+    {
+        "id": "49923932",
+        "title": "Increasingly-Sandboxed Qwen",
+        "description": "",
+        "source": "Hacker News",
+        "published_at": "2026-10-01 22:07:01",
+        "url": "https://lottia.net/notes/0020-increasingly-sandboxed-qwen.html",
+        "content_type": "Story",
+        "topic": "Other"
+    },
+    {
+        "id": "49923928",
+        "title": "Show HN: Opus6.video – Make Claude Opus 5.5 videos without a Claude account",
+        "description": "",
+        "source": "Hacker News",
+        "published_at": "2026-10-01 22:06:42",
+        "url": "https://opus6.video/",
+        "content_type": "Story",
+        "topic": "Other"
+    },
+    {
+        "id": "49923919",
+        "title": "Is the Yen Carry Trade Spiking Global Yields?",
+        "description": "",
+        "source": "Hacker News",
+        "published_at": "2026-10-01 22:05:54",
+        "url": "https://robinjbrooks.substack.com/p/is-the-yen-carry-trade-spiking-global",
+        "content_type": "Story",
+        "topic": "Other"
+    },
+    {
+        "id": "49923912",
+        "title": "F*uck Around and Find Out 101",
+        "description": "",
+        "source": "Hacker News",
+        "published_at": "2026-10-01 22:05:24",
+        "url": "https://0x4e.org/#blog/fafo",
+        "content_type": "Story",
+        "topic": "Other"
+    },
+    {
+        "id": "49923898",
+        "title": "From Embedded Dashboards to Programmable Analytics",
+        "description": "",
+        "source": "Hacker News",
+        "published_at": "2026-10-01 22:04:21",
+        "url": "https://www.ag-grid.com/blog/from-embedded-dashboards-to-programmable-analytics/",
+        "content_type": "Story",
+        "topic": "Other"
+    },
+    {
+        "id": "49923873",
+        "title": "Celebrating the 100th birthday of the kidney donated to him as a teenager",
+        "description": "",
+        "source": "Hacker News",
+        "published_at": "2026-10-01 22:02:40",
+        "url": "https://www.whec.com/top-news/webster-man-celebrating-the-100th-birthday-of-the-kidney-his-mom-donated-to-him-as-a-teenager/",
+        "content_type": "Story",
+        "topic": "Other"
+    },
+    {
+        "id": "49923869",
+        "title": "Frappe UI 1.0 Release",
+        "description": "",
+        "source": "Hacker News",
+        "published_at": "2026-10-01 22:02:06",
+        "url": "https://frappe.io/blog/engineering/introducing-frappe-ui-1",
+        "content_type": "Story",
+        "topic": "Other"
+    },
+    {
+        "id": "49923844",
+        "title": "GPT-6 Astra Reviews 'The Social Roots of Delusions'",
+        "description": "",
+        "source": "Hacker News",
+        "published_at": "2026-10-01 22:00:07",
+        "url": "https://www.conspicuouscognition.com/p/gpt-6-astra-reviews-the-social-roots",
+        "content_type": "Story",
+        "topic": "Other"
+    },
+    {
+        "id": "49923843",
+        "title": "Lists that keep track of their reversal",
+        "description": "",
+        "source": "Hacker News",
+        "published_at": "2026-10-01 22:00:06",
+        "url": "https://grim.cargocut.org/a/rev-list.html",
+        "content_type": "Story",
+        "topic": "Other"
+    },
+    {
+        "id": "49923831",
+        "title": "Trump's \"super intelligence\" naming problem",
+        "description": "",
+        "source": "Hacker News",
+        "published_at": "2026-10-01 21:59:02",
+        "url": "https://tech.yahoo.com/ai/articles/inside-trumps-super-intelligence-naming-181026789.html",
+        "content_type": "Story",
+        "topic": "Other"
+    },
+    {
+        "id": "49923816",
+        "title": "Show HN: Anywhich, a which that also checks your package managers",
+        "description": "",
+        "source": "Hacker News",
+        "published_at": "2026-10-01 21:58:09",
+        "url": "https://github.com/rokuroo171/anywhich",
+        "content_type": "Story",
+        "topic": "Other"
+    },
+    {
+        "id": "49923814",
+        "title": "Biological Wood Oxidation",
+        "description": "",
+        "source": "Hacker News",
+        "published_at": "2026-10-01 21:58:07",
+        "url": "https://en.wikipedia.org/wiki/Biological_wood_oxidation",
+        "content_type": "Story",
+        "topic": "Other"
+    },
+    {
+        "id": "49923768",
+        "title": "All the Rails World 2026 talks are now online",
+        "description": "",
+        "source": "Hacker News",
+        "published_at": "2026-10-01 21:55:03",
+        "url": "https://www.youtube.com/playlist?list=PLdMRFKO1zSBE",
+        "content_type": "Story",
+        "topic": "Artificial Intelligence"
+    },
+    {
+        "id": "49923761",
+        "title": "Migrating live Stripe subscriptions to a new catalogue without changing prices",
+        "description": "",
+        "source": "Hacker News",
+        "published_at": "2026-10-01 21:54:11",
+        "url": "https://github.com/loriscomba97/stripe-catalogue-migration",
+        "content_type": "Story",
+        "topic": "Other"
+    },
+    {
+        "id": "49923753",
+        "title": "Cooperating Against Catastrophe",
+        "description": "",
+        "source": "Hacker News",
+        "published_at": "2026-10-01 21:53:32",
+        "url": "https://arxiv.org/abs/2609.28291",
+        "content_type": "Story",
+        "topic": "Artificial Intelligence"
+    },
+    {
+        "id": "49923747",
+        "title": "Mail Spam – Im stuck need help",
+        "description": "",
+        "source": "Hacker News",
+        "published_at": "2026-10-01 21:53:14",
+        "url": "https://news.ycombinator.com/item?id=49923747",
+        "content_type": "Story",
+        "topic": "Artificial Intelligence"
+    },
+    {
+        "id": "49923742",
+        "title": "Battery-based device could bring carbon capture costs below $100 per ton",
+        "description": "",
+        "source": "Hacker News",
+        "published_at": "2026-10-01 21:52:59",
+        "url": "https://techxplore.com/news/2026-10-battery-based-device-carbon-capture.html",
+        "content_type": "Story",
+        "topic": "Hardware"
     }
 ]

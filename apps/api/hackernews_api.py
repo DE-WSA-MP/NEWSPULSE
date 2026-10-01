@@ -1,6 +1,7 @@
 import requests
 from apps.processing.date_utils import convert_unix_timestamp
 
+
 BASE_URL = "https://hacker-news.firebaseio.com/v0"
 
 HEADERS = {
@@ -36,7 +37,7 @@ def fetch_story(story_id):
     return response.json()
 
 
-def get_new_stories(limit=10):
+def get_new_stories(limit=50):
 
     story_ids = fetch_story_ids()
 
@@ -69,7 +70,8 @@ def get_new_stories(limit=10):
                 "url",
                 f"https://news.ycombinator.com/item?id={story.get('id')}"
             ),
-            "category": "Technology"
+            "content_type": "Story",
+            "topic": ""
         }
 
         stories.append(record)
@@ -81,7 +83,7 @@ def main():
 
     print("Fetching Hacker News stories...")
 
-    stories = get_new_stories(limit=10)
+    stories = get_new_stories(limit=50)
 
     print(f"\nFound {len(stories)} stories.\n")
 
@@ -89,7 +91,8 @@ def main():
 
         print(f"{i}. {story['title']}")
         print(f"   Source: {story['source']}")
-        print(f"   Category: {story['category']}")
+        print(f"   Content Type: {story['content_type']}")
+        print(f"   Topic: {story.get('topic', '')}")
         print(f"   Date: {story['published_at']}")
         print(f"   URL: {story['url']}")
         print()

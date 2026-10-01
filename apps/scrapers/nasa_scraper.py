@@ -1,5 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
+from datetime import datetime
+import re
 
 
 NASA_URL = "https://www.nasa.gov/news/recently-published/"
@@ -21,6 +23,43 @@ def fetch_nasa_page():
     response.raise_for_status()
 
     return response.text
+
+
+def extract_date_from_url(url):
+    """
+    Extract publication date from a NASA article URL.
+
+    Example:
+    /2026/10/01/article-name/
+
+    Returns:
+    2026-10-01
+    """
+
+    if not url:
+        return ""
+
+    match = re.search(
+        r"/(20\d{2})/(\d{2})/(\d{2})/",
+        url
+    )
+
+    if match:
+        year, month, day = match.groups()
+
+        try:
+            date_object = datetime(
+                int(year),
+                int(month),
+                int(day)
+            )
+
+            return date_object.strftime("%Y-%m-%d")
+
+        except ValueError:
+            return ""
+
+    return ""
 
 
 def parse_nasa_articles(html):
@@ -96,10 +135,12 @@ def parse_nasa_articles(html):
         # -------------------------
         # Publication date
         # -------------------------
+
         published_at = ""
 
+        # First try to extract the date from the page.
         date_element = card.select_one(
-            ".color-carbon-60.margin-bottom-1.margin-top-1"
+            "div.color-carbon-60.margin-bottom-1.margin-top-1"
         )
 
         if date_element:
@@ -107,6 +148,11 @@ def parse_nasa_articles(html):
                 " ",
                 strip=True
             )
+
+        # If the page does not contain a visible date,
+        # extract it from the NASA article URL.
+        if not published_at:
+            published_at = extract_date_from_url(url)
 
         # -------------------------
         # Store article
@@ -118,7 +164,8 @@ def parse_nasa_articles(html):
             "source": "NASA",
             "published_at": published_at,
             "url": url,
-            "category": content_type
+            "content_type": content_type,
+            "topic": ""
         }
 
         articles.append(article)
@@ -139,15 +186,23 @@ def main():
 
     print(f"\nFound {len(articles)} NASA articles.\n")
 
-    for i, article in enumerate(articles[:10], start=1):
+    for i, article in enumerate(
+        articles[:10],
+        start=1
+    ):
 
         print(f"{i}. {article['title']}")
-        print(f"   Category: {article['category']}")
+        print(f"   Content Type: {article['content_type']}")
+        print(f"   Topic: {article.get('topic', '')}")
         print(f"   Date: {article['published_at']}")
         print(f"   URL: {article['url']}")
-        print(f"   Description: {article['description'][:150]}")
+        print(
+            f"   Description: "
+            f"{article['description'][:150]}"
+        )
         print()
 
 
 if __name__ == "__main__":
     main()
+
