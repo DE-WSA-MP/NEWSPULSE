@@ -1,5 +1,5 @@
 import re
-
+from apps.processing.date_utils import normalize_date
 
 REQUIRED_FIELDS = [
     "id",
@@ -72,9 +72,9 @@ def clean_record(record):
         cleaned.get("id", "")
     ).strip()
 
-    cleaned["published_at"] = str(
+    cleaned["published_at"] = normalize_date(
         cleaned.get("published_at", "")
-    ).strip()
+    )
 
     return cleaned
 

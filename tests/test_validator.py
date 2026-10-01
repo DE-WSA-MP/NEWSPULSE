@@ -16,7 +16,10 @@ def test_valid_record():
         "category": "Technology"
     }
 
-    assert validate_record(record) is True
+    is_valid, reasons = validate_record(record)
+
+    assert is_valid is True
+    assert reasons == []
 
 
 def test_invalid_record_missing_title():
@@ -31,7 +34,10 @@ def test_invalid_record_missing_title():
         "category": "Technology"
     }
 
-    assert validate_record(record) is False
+    is_valid, reasons = validate_record(record)
+
+    assert is_valid is False
+    assert "Title is empty" in reasons
 
 
 def test_validate_records():
@@ -62,3 +68,5 @@ def test_validate_records():
 
     assert len(valid) == 1
     assert len(invalid) == 1
+
+    assert "ID is empty" in invalid[0]["reasons"]

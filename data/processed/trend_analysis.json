@@ -1,0 +1,228 @@
+{
+    "total_records": 53,
+    "records_by_source": {
+        "NASA": 25,
+        "Wikipedia": 18,
+        "Hacker News": 10
+    },
+    "records_by_category": {
+        "Image Article": 4,
+        "Article": 6,
+        "News Release": 6,
+        "Blog": 8,
+        "Gaza war": 1,
+        "Somali Civil War": 1,
+        "coronation": 1,
+        "Economic impact of the 2026 Iran war": 1,
+        "Julius Baer Group controversies": 1,
+        "Japan Meteorological Agency": 1,
+        "Food and Drug Administration": 1,
+        "North Korea–South Korea relations": 1,
+        "Haitian crisis": 1,
+        "Malaysia–Myanmar relations": 1,
+        "Myanmar civil war": 1,
+        "2026 Staškov school stabbing": 1,
+        "Crime in Mexico": 1,
+        "police officers": 1,
+        "Six Flags Magic Mountain": 1,
+        "2026 Moroccan general election": 1,
+        "2026 Asian Games": 1,
+        "Manchester City F.C. financial breaches scandal": 1,
+        "Technology": 10
+    },
+    "records_by_date": {
+        "2026-10-01": 11,
+        "2026-09-30": 4,
+        "2026-09-29": 19
+    },
+    "top_keywords": [
+        [
+            "launch",
+            24
+        ],
+        [
+            "space",
+            19
+        ],
+        [
+            "crew",
+            18
+        ],
+        [
+            "apod",
+            12
+        ],
+        [
+            "spacex",
+            10
+        ],
+        [
+            "mission",
+            10
+        ],
+        [
+            "south",
+            10
+        ],
+        [
+            "international",
+            9
+        ],
+        [
+            "force",
+            9
+        ],
+        [
+            "human",
+            9
+        ],
+        [
+            "sept",
+            8
+        ],
+        [
+            "contract",
+            8
+        ],
+        [
+            "station",
+            8
+        ],
+        [
+            "weather",
+            8
+        ],
+        [
+            "israeli",
+            8
+        ]
+    ],
+    "top_keywords_by_source": {
+        "NASA": [
+            [
+                "launch",
+                24
+            ],
+            [
+                "space",
+                19
+            ],
+            [
+                "crew",
+                14
+            ],
+            [
+                "apod",
+                12
+            ],
+            [
+                "spacex",
+                10
+            ],
+            [
+                "mission",
+                10
+            ],
+            [
+                "international",
+                9
+            ],
+            [
+                "sept",
+                8
+            ],
+            [
+                "contract",
+                8
+            ],
+            [
+                "station",
+                8
+            ]
+        ],
+        "Wikipedia": [
+            [
+                "south",
+                10
+            ],
+            [
+                "israeli",
+                8
+            ],
+            [
+                "security",
+                8
+            ],
+            [
+                "bank",
+                6
+            ],
+            [
+                "piracy",
+                6
+            ],
+            [
+                "puntland",
+                6
+            ],
+            [
+                "police",
+                6
+            ],
+            [
+                "force",
+                6
+            ],
+            [
+                "pirates",
+                6
+            ],
+            [
+                "killed",
+                6
+            ]
+        ],
+        "Hacker News": [
+            [
+                "show",
+                2
+            ],
+            [
+                "pklm",
+                2
+            ],
+            [
+                "language",
+                1
+            ],
+            [
+                "models",
+                1
+            ],
+            [
+                "hide",
+                1
+            ],
+            [
+                "bad",
+                1
+            ],
+            [
+                "reports",
+                1
+            ],
+            [
+                "default",
+                1
+            ],
+            [
+                "language models",
+                1
+            ],
+            [
+                "models hide",
+                1
+            ]
+        ]
+    }
+}
