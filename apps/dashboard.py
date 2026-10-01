@@ -1,26 +1,35 @@
 import json
-import streamlit as st
+import sys
+from datetime import datetime
+from pathlib import Path
+
 import pandas as pd
-
-
-NEWS_DATA_FILE = "data/processed/news_data.json"
-TREND_DATA_FILE = "data/processed/trend_analysis.json"
+import streamlit as st
 
 
 # -------------------------------------------------
-# Load data
+# Add project root to Python path
 # -------------------------------------------------
 
-@st.cache_data
-def load_news_data():
-    with open(NEWS_DATA_FILE, "r", encoding="utf-8") as file:
-        return json.load(file)
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
 
 
-@st.cache_data
-def load_trend_data():
-    with open(TREND_DATA_FILE, "r", encoding="utf-8") as file:
-        return json.load(file)
+from apps.pipeline import main as run_pipeline
+from apps.analysis.trend_analysis import (
+    main as run_trend_analysis
+)
+
+
+NEWS_DATA_FILE = (
+    "data/processed/news_data.json"
+)
+
+TREND_DATA_FILE = (
+    "data/processed/trend_analysis.json"
+)
 
 
 # -------------------------------------------------
@@ -35,10 +44,112 @@ st.set_page_config(
 
 
 # -------------------------------------------------
+# Run live data acquisition
+# -------------------------------------------------
+
+def refresh_data():
+    """Fetch fresh data and regenerate analysis."""
+
+    run_pipeline()
+    run_trend_analysis()
+
+    st.cache_data.clear()
+
+
+# -------------------------------------------------
+# Load data
+# -------------------------------------------------
+
+@st.cache_data
+def load_news_data():
+
+    with open(
+        NEWS_DATA_FILE,
+        "r",
+        encoding="utf-8"
+    ) as file:
+
+        return json.load(file)
+
+
+@st.cache_data
+def load_trend_data():
+
+    with open(
+        TREND_DATA_FILE,
+        "r",
+        encoding="utf-8"
+    ) as file:
+
+        return json.load(file)
+
+
+# -------------------------------------------------
+# Initial live data fetch
+# -------------------------------------------------
+
+if "data_initialized" not in st.session_state:
+
+    with st.spinner(
+        "Fetching latest data from NASA, "
+        "Wikipedia and Hacker News..."
+    ):
+
+        refresh_data()
+
+    st.session_state.data_initialized = True
+
+    st.session_state.last_refresh = (
+        datetime.now()
+    )
+
+
+# -------------------------------------------------
+# Refresh button
+# -------------------------------------------------
+
+refresh_col1, refresh_col2 = st.columns(
+    [1, 5]
+)
+
+with refresh_col1:
+
+    if st.button(
+        "🔄 Refresh Data",
+        use_container_width=True
+    ):
+
+        with st.spinner(
+            "Fetching latest data..."
+        ):
+
+            refresh_data()
+
+        st.session_state.last_refresh = (
+            datetime.now()
+        )
+
+        st.rerun()
+
+
+with refresh_col2:
+
+    if "last_refresh" in st.session_state:
+
+        st.caption(
+            "Last refreshed: "
+            + st.session_state.last_refresh.strftime(
+                "%d %b %Y, %H:%M:%S"
+            )
+        )
+
+
+# -------------------------------------------------
 # Load datasets
 # -------------------------------------------------
 
 records = load_news_data()
+
 trend_data = load_trend_data()
 
 df = pd.DataFrame(records)
@@ -49,14 +160,16 @@ df = pd.DataFrame(records)
 # -------------------------------------------------
 
 st.title("📰 NewsPulse")
+
 st.subheader(
-    "Multi-Source News Intelligence & Trend Analysis Platform"
+    "Multi-Source News Intelligence "
+    "& Trend Analysis Platform"
 )
 
 st.write(
-    "NewsPulse collects news and current-event data from "
-    "multiple sources, processes the data, and identifies "
-    "basic trends and patterns."
+    "NewsPulse collects news and current-event "
+    "data from multiple sources, processes the "
+    "data, and identifies basic trends and patterns."
 )
 
 
@@ -66,81 +179,163 @@ st.write(
 
 total_records = len(records)
 
-source_counts = trend_data["records_by_source"]
+source_counts = trend_data[
+    "records_by_source"
+]
 
-nasa_count = source_counts.get("NASA", 0)
-wikipedia_count = source_counts.get("Wikipedia", 0)
-hackernews_count = source_counts.get("Hacker News", 0)
+nasa_count = source_counts.get(
+    "NASA",
+    0
+)
+
+wikipedia_count = source_counts.get(
+    "Wikipedia",
+    0
+)
+
+hackernews_count = source_counts.get(
+    "Hacker News",
+    0
+)
 
 
 col1, col2, col3, col4 = st.columns(4)
 
+
 with col1:
-    st.metric("Total Records", total_records)
+
+    st.metric(
+        "Total Records",
+        total_records
+    )
+
 
 with col2:
-    st.metric("NASA", nasa_count)
+
+    st.metric(
+        "NASA",
+        nasa_count
+    )
+
 
 with col3:
-    st.metric("Wikipedia", wikipedia_count)
+
+    st.metric(
+        "Wikipedia",
+        wikipedia_count
+    )
+
 
 with col4:
-    st.metric("Hacker News", hackernews_count)
+
+    st.metric(
+        "Hacker News",
+        hackernews_count
+    )
 
 
 st.divider()
 
 
 # -------------------------------------------------
-# Source analysis
+# Content type distribution
 # -------------------------------------------------
 
-st.header("Source Distribution")
-
-source_df = pd.DataFrame(
-    list(source_counts.items()),
-    columns=["Source", "Records"]
+st.header(
+    "Content Type Distribution"
 )
 
-st.bar_chart(
-    source_df.set_index("Source")
+content_type_counts = trend_data[
+    "records_by_content_type"
+]
+
+content_type_df = pd.DataFrame(
+    list(
+        content_type_counts.items()
+    ),
+    columns=[
+        "Content Type",
+        "Records"
+    ]
+)
+
+content_type_df = (
+    content_type_df.sort_values(
+        "Records",
+        ascending=False
+    )
+)
+
+st.dataframe(
+    content_type_df,
+    use_container_width=True,
+    hide_index=True
 )
 
 
 # -------------------------------------------------
-# Category analysis
+# Topic distribution
 # -------------------------------------------------
 
-st.header("Category Distribution")
-
-category_counts = trend_data["records_by_category"]
-
-category_df = pd.DataFrame(
-    list(category_counts.items()),
-    columns=["Category", "Records"]
+st.header(
+    "Topic Distribution"
 )
 
-st.bar_chart(
-    category_df.set_index("Category")
+topic_counts = trend_data[
+    "records_by_topic"
+]
+
+topic_df = pd.DataFrame(
+    list(
+        topic_counts.items()
+    ),
+    columns=[
+        "Topic",
+        "Records"
+    ]
+)
+
+topic_df = topic_df.sort_values(
+    "Records",
+    ascending=False
+)
+
+st.dataframe(
+    topic_df,
+    use_container_width=True,
+    hide_index=True
 )
 
 
 # -------------------------------------------------
-# Date analysis
+# Records by date
 # -------------------------------------------------
 
-st.header("Records by Date")
+st.header(
+    "Records by Date"
+)
 
-date_counts = trend_data["records_by_date"]
+date_counts = trend_data[
+    "records_by_date"
+]
 
 date_df = pd.DataFrame(
-    list(date_counts.items()),
-    columns=["Date", "Records"]
+    list(
+        date_counts.items()
+    ),
+    columns=[
+        "Date",
+        "Records"
+    ]
 )
 
-date_df["Date"] = pd.to_datetime(date_df["Date"])
+date_df["Date"] = pd.to_datetime(
+    date_df["Date"]
+)
 
-date_df = date_df.sort_values("Date")
+date_df = date_df.sort_values(
+    "Date"
+)
 
 st.line_chart(
     date_df.set_index("Date")
@@ -148,31 +343,47 @@ st.line_chart(
 
 
 # -------------------------------------------------
-# Keyword analysis
+# Top keywords
 # -------------------------------------------------
 
-st.header("Top Keywords")
+st.header(
+    "Top Keywords"
+)
 
-keyword_data = trend_data["top_keywords"]
+keyword_data = trend_data[
+    "top_keywords"
+]
 
 keyword_df = pd.DataFrame(
     keyword_data,
-    columns=["Keyword", "Frequency"]
+    columns=[
+        "Keyword",
+        "Frequency"
+    ]
 )
 
 st.bar_chart(
-    keyword_df.set_index("Keyword")
+    keyword_df.set_index(
+        "Keyword"
+    )
 )
 
 
 # -------------------------------------------------
-# Source filter
+# News Explorer
 # -------------------------------------------------
 
-st.header("News Explorer")
+st.header(
+    "News Explorer"
+)
 
-available_sources = ["All"] + sorted(
-    df["source"].dropna().unique().tolist()
+available_sources = [
+    "All"
+] + sorted(
+    df["source"]
+    .dropna()
+    .unique()
+    .tolist()
 )
 
 selected_source = st.selectbox(
@@ -180,11 +391,15 @@ selected_source = st.selectbox(
     available_sources
 )
 
+
 if selected_source != "All":
+
     filtered_df = df[
         df["source"] == selected_source
     ].copy()
+
 else:
+
     filtered_df = df.copy()
 
 
@@ -195,7 +410,8 @@ else:
 display_columns = [
     "title",
     "source",
-    "category",
+    "content_type",
+    "topic",
     "published_at",
     "url"
 ]
@@ -207,7 +423,8 @@ display_df = filtered_df[
 display_df.columns = [
     "Title",
     "Source",
-    "Category",
+    "Content Type",
+    "Topic",
     "Published At",
     "URL"
 ]
@@ -223,25 +440,35 @@ st.dataframe(
 # Source-wise trends
 # -------------------------------------------------
 
-st.header("Source-wise Trends")
+st.header(
+    "Source-wise Trends"
+)
 
 source_keyword_data = trend_data[
     "top_keywords_by_source"
 ]
 
+
 if selected_source == "All":
 
-    for source, keywords in source_keyword_data.items():
+    for source, keywords in (
+        source_keyword_data.items()
+    ):
 
         st.subheader(source)
 
         keyword_source_df = pd.DataFrame(
             keywords,
-            columns=["Keyword", "Frequency"]
+            columns=[
+                "Keyword",
+                "Frequency"
+            ]
         )
 
         st.bar_chart(
-            keyword_source_df.set_index("Keyword")
+            keyword_source_df.set_index(
+                "Keyword"
+            )
         )
 
 else:
@@ -255,14 +482,21 @@ else:
 
         keyword_source_df = pd.DataFrame(
             keywords,
-            columns=["Keyword", "Frequency"]
+            columns=[
+                "Keyword",
+                "Frequency"
+            ]
         )
 
         st.bar_chart(
-            keyword_source_df.set_index("Keyword")
+            keyword_source_df.set_index(
+                "Keyword"
+            )
         )
 
     else:
+
         st.info(
-            "No keyword data available for this source."
+            "No keyword data available "
+            "for this source."
         )

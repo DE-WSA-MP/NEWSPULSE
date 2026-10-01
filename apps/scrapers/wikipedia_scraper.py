@@ -168,7 +168,8 @@ def parse_wikipedia_events(html):
                 "source": "Wikipedia",
                 "published_at": "2026-09-29",
                 "url": event_url,
-                "category": category,
+                "content_type": "Current Event",
+                "topic": category,
                 "source_links": source_links
             }
 

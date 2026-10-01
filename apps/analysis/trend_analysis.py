@@ -2,6 +2,7 @@ import json
 from collections import Counter
 import re
 
+
 DATA_FILE = "data/processed/news_data.json"
 
 
@@ -24,16 +25,28 @@ def analyze_sources(records):
     return dict(source_counts)
 
 
-def analyze_categories(records):
-    """Count records by category."""
+def analyze_content_types(records):
+    """Count records by content type."""
 
-    category_counts = Counter(
-        record.get("category", "")
+    content_type_counts = Counter(
+        record.get("content_type", "")
         for record in records
-        if record.get("category")
+        if record.get("content_type")
     )
 
-    return dict(category_counts)
+    return dict(content_type_counts)
+
+
+def analyze_topics(records):
+    """Count records by topic."""
+
+    topic_counts = Counter(
+        record.get("topic", "")
+        for record in records
+        if record.get("topic")
+    )
+
+    return dict(topic_counts)
 
 
 def analyze_dates(records):
@@ -42,13 +55,18 @@ def analyze_dates(records):
     date_counts = Counter()
 
     for record in records:
-        published_at = record.get("published_at", "")
+
+        published_at = record.get(
+            "published_at",
+            ""
+        )
 
         if published_at:
             date = published_at[:10]
             date_counts[date] += 1
 
     return dict(date_counts)
+
 
 def analyze_keywords(records, top_n=15):
     """Find frequent meaningful words and phrases."""
@@ -104,6 +122,7 @@ def analyze_keywords(records, top_n=15):
 
         # Two-word phrases
         for i in range(len(filtered_words) - 1):
+
             phrase = (
                 filtered_words[i]
                 + " "
@@ -112,14 +131,17 @@ def analyze_keywords(records, top_n=15):
 
             phrase_counts[phrase] += 1
 
-    # Combine words and phrases
     combined = []
 
     for word, count in word_counts.items():
-        combined.append((word, count))
+        combined.append(
+            (word, count)
+        )
 
     for phrase, count in phrase_counts.items():
-        combined.append((phrase, count))
+        combined.append(
+            (phrase, count)
+        )
 
     combined.sort(
         key=lambda item: item[1],
@@ -127,6 +149,7 @@ def analyze_keywords(records, top_n=15):
     )
 
     return combined[:top_n]
+
 
 def analyze_keywords_by_source(records, top_n=10):
     """Find meaningful keywords and phrases for each source."""
@@ -157,7 +180,10 @@ def analyze_keywords_by_source(records, top_n=10):
 
     for record in records:
 
-        source = record.get("source", "")
+        source = record.get(
+            "source",
+            ""
+        )
 
         if not source:
             continue
@@ -201,16 +227,27 @@ def analyze_keywords_by_source(records, top_n=10):
     result = {}
 
     for source, counts in source_counts.items():
-        result[source] = counts.most_common(top_n)
+
+        result[source] = counts.most_common(
+            top_n
+        )
 
     return result
+
 
 def save_analysis(results):
     """Save trend analysis results to JSON."""
 
-    output_file = "data/processed/trend_analysis.json"
+    output_file = (
+        "data/processed/trend_analysis.json"
+    )
 
-    with open(output_file, "w", encoding="utf-8") as file:
+    with open(
+        output_file,
+        "w",
+        encoding="utf-8"
+    ) as file:
+
         json.dump(
             results,
             file,
@@ -218,59 +255,157 @@ def save_analysis(results):
             ensure_ascii=False
         )
 
-    print(f"\nTrend analysis saved to {output_file}")
+    print(
+        f"\nTrend analysis saved to "
+        f"{output_file}"
+    )
+
 
 def main():
 
-    print("Starting NewsPulse trend analysis...")
+    print(
+        "Starting NewsPulse trend analysis..."
+    )
 
     records = load_data()
 
-    print(f"\nTotal records loaded: {len(records)}")
+    print(
+        f"\nTotal records loaded: "
+        f"{len(records)}"
+    )
 
-    source_counts = analyze_sources(records)
-    category_counts = analyze_categories(records)
-    date_counts = analyze_dates(records)
-    keyword_counts = analyze_keywords(records)
-    source_keyword_counts = analyze_keywords_by_source(records)
+    # -------------------------------------------------
+    # Analysis
+    # -------------------------------------------------
+
+    source_counts = analyze_sources(
+        records
+    )
+
+    content_type_counts = (
+        analyze_content_types(records)
+    )
+
+    topic_counts = analyze_topics(
+        records
+    )
+
+    date_counts = analyze_dates(
+        records
+    )
+
+    keyword_counts = analyze_keywords(
+        records
+    )
+
+    source_keyword_counts = (
+        analyze_keywords_by_source(records)
+    )
+
+    # -------------------------------------------------
+    # Source analysis
+    # -------------------------------------------------
 
     print("\nRecords by source:")
 
     for source, count in source_counts.items():
-        print(f"{source}: {count}")
+        print(
+            f"{source}: {count}"
+        )
 
-    print("\nRecords by category:")
+    # -------------------------------------------------
+    # Content type analysis
+    # -------------------------------------------------
 
-    for category, count in category_counts.items():
-        print(f"{category}: {count}")
+    print("\nRecords by content type:")
+
+    for content_type, count in (
+        content_type_counts.items()
+    ):
+
+        print(
+            f"{content_type}: {count}"
+        )
+
+    # -------------------------------------------------
+    # Topic analysis
+    # -------------------------------------------------
+
+    print("\nRecords by topic:")
+
+    for topic, count in topic_counts.items():
+
+        print(
+            f"{topic}: {count}"
+        )
+
+    # -------------------------------------------------
+    # Date analysis
+    # -------------------------------------------------
 
     print("\nRecords by date:")
 
-    for date, count in sorted(date_counts.items()):
-        print(f"{date}: {count}")
+    for date, count in sorted(
+        date_counts.items()
+    ):
+
+        print(
+            f"{date}: {count}"
+        )
+
+    # -------------------------------------------------
+    # Keyword analysis
+    # -------------------------------------------------
 
     print("\nTop keywords:")
 
     for keyword, count in keyword_counts:
-        print(f"{keyword}: {count}")
 
-    print("\nTop keywords by source:")
+        print(
+            f"{keyword}: {count}"
+        )
 
-    for source, keywords in source_keyword_counts.items():
-        print(f"\n{source}:")
+    # -------------------------------------------------
+    # Source-wise keyword analysis
+    # -------------------------------------------------
+
+    print(
+        "\nTop keywords by source:"
+    )
+
+    for source, keywords in (
+        source_keyword_counts.items()
+    ):
+
+        print(
+            f"\n{source}:"
+        )
 
         for keyword, count in keywords:
-            print(f"  {keyword}: {count}")
+
+            print(
+                f"  {keyword}: {count}"
+            )
+
+    # -------------------------------------------------
+    # Save results
+    # -------------------------------------------------
 
     analysis_results = {
         "total_records": len(records),
         "records_by_source": source_counts,
-        "records_by_category": category_counts,
+        "records_by_content_type": content_type_counts,
+        "records_by_topic": topic_counts,
         "records_by_date": date_counts,
         "top_keywords": keyword_counts,
-        "top_keywords_by_source": source_keyword_counts
+        "top_keywords_by_source":
+            source_keyword_counts
     }
 
-    save_analysis(analysis_results)
+    save_analysis(
+        analysis_results
+    )
+
+
 if __name__ == "__main__":
     main()

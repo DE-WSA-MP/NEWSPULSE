@@ -12,10 +12,16 @@ from apps.processing.validator import validate_records
 from apps.processing.deduplicator import deduplicate_records
 from apps.processing.integrator import integrate_records
 from apps.processing.data_writer import save_json
+from apps.processing.topic_classifier import add_topics
 
 def main():
 
     print("Starting NewsPulse pipeline...")
+
+    # -------------------------------------------------
+    # NASA
+    # -------------------------------------------------
+
     print("\n[1] Fetching NASA data...")
 
     html = fetch_nasa_page()
@@ -34,10 +40,16 @@ def main():
     ):
         print(f"{i}. {record['title']}")
         print(f"   Source: {record['source']}")
-        print(f"   Category: {record['category']}")
+        print(f"   Content Type: {record['content_type']}")
+        print(f"   Topic: {record.get('topic', '')}")
         print(f"   Date: {record['published_at']}")
         print(f"   URL: {record['url']}")
         print()
+
+
+    # -------------------------------------------------
+    # Wikipedia
+    # -------------------------------------------------
 
     print("\n[2] Fetching Wikipedia data...")
 
@@ -60,14 +72,21 @@ def main():
     ):
         print(f"{i}. {record['title']}")
         print(f"   Source: {record['source']}")
-        print(f"   Category: {record['category']}")
+        print(f"   Content Type: {record['content_type']}")
+        print(f"   Topic: {record.get('topic', '')}")
         print(f"   Date: {record['published_at']}")
         print(f"   URL: {record['url']}")
         print()
+
+
+    # -------------------------------------------------
+    # Hacker News
+    # -------------------------------------------------
+
     print("\n[3] Fetching Hacker News data...")
 
     hackernews_records = get_new_stories(
-        limit=10
+        limit=50
     )
 
     print(
@@ -83,10 +102,12 @@ def main():
     ):
         print(f"{i}. {record['title']}")
         print(f"   Source: {record['source']}")
-        print(f"   Category: {record['category']}")
+        print(f"   Content Type: {record['content_type']}")
+        print(f"   Topic: {record.get('topic', '')}")
         print(f"   Date: {record['published_at']}")
         print(f"   URL: {record['url']}")
         print()
+
 
     # -------------------------------------------------
     # Combine all acquired records
@@ -120,6 +141,21 @@ def main():
         f"{len(cleaned_records)}"
     )
 
+    # -------------------------------------------------
+    # Topic Classification
+    # -------------------------------------------------
+
+    print("\n[5.5] Detecting topics...")
+
+    topic_records = add_topics(
+        cleaned_records
+    )
+
+    print(
+        f"Topics assigned to "
+        f"{len(topic_records)} records"
+    )
+
 
     # -------------------------------------------------
     # Validation
@@ -128,7 +164,7 @@ def main():
     print("\n[6] Validating records...")
 
     valid_records, invalid_records = validate_records(
-        cleaned_records
+        topic_records
     )
 
     print(
@@ -138,18 +174,34 @@ def main():
     print(
         f"Invalid records: {len(invalid_records)}"
     )
+
     if invalid_records:
+
         print("\nInvalid records:")
 
         for item in invalid_records:
+
             record = item["record"]
             reasons = item["reasons"]
 
-            print(f"\nTitle: {record.get('title', '')}")
-            print(f"Source: {record.get('source', '')}")
-            print(f"URL: {record.get('url', '')}")
-            print(f"Reasons: {', '.join(reasons)}")
+            print(
+                f"\nTitle: {record.get('title', '')}"
+            )
+
+            print(
+                f"Source: {record.get('source', '')}"
+            )
+
+            print(
+                f"URL: {record.get('url', '')}"
+            )
+
+            print(
+                f"Reasons: {', '.join(reasons)}"
+            )
+
     else:
+
         print("No invalid records.")
 
 
@@ -192,23 +244,28 @@ def main():
     print("\nSource summary:")
 
     nasa_count = sum(
-        1 for record in integrated_records
+        1
+        for record in integrated_records
         if record["source"] == "NASA"
     )
 
     wikipedia_count = sum(
-        1 for record in integrated_records
+        1
+        for record in integrated_records
         if record["source"] == "Wikipedia"
     )
 
     hackernews_count = sum(
-        1 for record in integrated_records
+        1
+        for record in integrated_records
         if record["source"] == "Hacker News"
     )
 
     print(f"NASA: {nasa_count}")
     print(f"Wikipedia: {wikipedia_count}")
     print(f"Hacker News: {hackernews_count}")
+
+
     # -------------------------------------------------
     # Save processed dataset
     # -------------------------------------------------
@@ -219,6 +276,11 @@ def main():
         integrated_records,
         output_file
     )
+
+    print(
+        f"\nProcessed dataset saved to: {output_file}"
+    )
+
 
 if __name__ == "__main__":
     main()

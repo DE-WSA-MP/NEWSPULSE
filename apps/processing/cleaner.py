@@ -2,13 +2,8 @@ import re
 from apps.processing.date_utils import normalize_date
 
 REQUIRED_FIELDS = [
-    "id",
-    "title",
-    "description",
-    "source",
-    "published_at",
-    "url",
-    "category"
+    "id", "title", "description", "source",
+    "published_at", "url", "content_type", "topic"
 ]
 
 
@@ -60,10 +55,13 @@ def clean_record(record):
         cleaned.get("source", "")
     )
 
-    cleaned["category"] = clean_text(
-        cleaned.get("category", "")
+    cleaned["content_type"] = clean_text(
+        cleaned.get("content_type", "")
     )
 
+    cleaned["topic"] = clean_text(
+        cleaned.get("topic", "")
+    )
     cleaned["url"] = str(
         cleaned.get("url", "")
     ).strip()
