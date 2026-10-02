@@ -18,9 +18,7 @@ def main():
 
     print("Starting NewsPulse pipeline...")
 
-    # -------------------------------------------------
     # NASA
-    # -------------------------------------------------
 
     print("\n[1] Fetching NASA data...")
 
@@ -46,10 +44,7 @@ def main():
         print(f"   URL: {record['url']}")
         print()
 
-
-    # -------------------------------------------------
     # Wikipedia
-    # -------------------------------------------------
 
     print("\n[2] Fetching Wikipedia data...")
 
@@ -78,10 +73,7 @@ def main():
         print(f"   URL: {record['url']}")
         print()
 
-
-    # -------------------------------------------------
     # Hacker News
-    # -------------------------------------------------
 
     print("\n[3] Fetching Hacker News data...")
 
@@ -108,10 +100,7 @@ def main():
         print(f"   URL: {record['url']}")
         print()
 
-
-    # -------------------------------------------------
     # Combine all acquired records
-    # -------------------------------------------------
 
     print("\n[4] Combining acquired records...")
 
@@ -125,10 +114,7 @@ def main():
         f"Total raw records: {len(all_records)}"
     )
 
-
-    # -------------------------------------------------
     # Cleaning
-    # -------------------------------------------------
 
     print("\n[5] Cleaning records...")
 
@@ -141,9 +127,7 @@ def main():
         f"{len(cleaned_records)}"
     )
 
-    # -------------------------------------------------
     # Topic Classification
-    # -------------------------------------------------
 
     print("\n[5.5] Detecting topics...")
 
@@ -156,10 +140,7 @@ def main():
         f"{len(topic_records)} records"
     )
 
-
-    # -------------------------------------------------
     # Validation
-    # -------------------------------------------------
 
     print("\n[6] Validating records...")
 
@@ -204,10 +185,7 @@ def main():
 
         print("No invalid records.")
 
-
-    # -------------------------------------------------
     # Deduplication
-    # -------------------------------------------------
 
     print("\n[7] Removing duplicate records...")
 
@@ -220,10 +198,7 @@ def main():
         f"{len(deduplicated_records)}"
     )
 
-
-    # -------------------------------------------------
     # Integration
-    # -------------------------------------------------
 
     print("\n[8] Integrating final records...")
 
@@ -236,10 +211,7 @@ def main():
         f"{len(integrated_records)}"
     )
 
-
-    # -------------------------------------------------
     # Source summary
-    # -------------------------------------------------
 
     print("\nSource summary:")
 
@@ -265,10 +237,7 @@ def main():
     print(f"Wikipedia: {wikipedia_count}")
     print(f"Hacker News: {hackernews_count}")
 
-
-    # -------------------------------------------------
     # Save processed dataset
-    # -------------------------------------------------
 
     output_file = "data/processed/news_data.json"
 

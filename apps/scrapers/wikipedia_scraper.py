@@ -52,16 +52,12 @@ def parse_wikipedia_events(html):
 
         for item in items:
 
-            # -------------------------------------------------
             # Find the actual event content
-            # -------------------------------------------------
 
             nested_list = item.find("ul", recursive=False)
 
             if nested_list is not None:
 
-                # Some Wikipedia entries have a topic/category
-                # followed by a nested list containing the event.
                 event_item = nested_list.find(
                     "li",
                     recursive=False
@@ -72,14 +68,9 @@ def parse_wikipedia_events(html):
 
             else:
 
-                # Some entries contain the event directly
-                # in the outer <li>.
                 event_item = item
 
-
-            # -------------------------------------------------
             # Get category/topic
-            # -------------------------------------------------
 
             category_link = item.find(
                 "a",
@@ -94,10 +85,7 @@ def parse_wikipedia_events(html):
                     strip=True
                 )
 
-
-            # -------------------------------------------------
             # Collect external source links
-            # -------------------------------------------------
 
             source_links = []
 
@@ -110,32 +98,19 @@ def parse_wikipedia_events(html):
                 if href and href not in source_links:
                     source_links.append(href)
 
-
-            # -------------------------------------------------
             # Create a copy for text cleaning
-            # -------------------------------------------------
 
             event_copy = BeautifulSoup(
                 str(event_item),
                 "html.parser"
             ).find("li")
 
-
-            # Remove source labels such as:
-            # (Reuters)
-            # (AFP via RFI)
-            #
-            # The actual URLs are already stored in
-            # source_links.
             for link in event_copy.select(
                 "a.external.text[href]"
             ):
                 link.extract()
 
-
-            # -------------------------------------------------
             # Extract complete event text
-            # -------------------------------------------------
 
             event_text = event_copy.get_text(
                 " ",
@@ -145,10 +120,7 @@ def parse_wikipedia_events(html):
             if not event_text:
                 continue
 
-
-            # -------------------------------------------------
             # Determine event URL
-            # -------------------------------------------------
 
             if source_links:
                 event_url = source_links[0]
@@ -156,10 +128,7 @@ def parse_wikipedia_events(html):
             else:
                 event_url = WIKIPEDIA_URL
 
-
-            # -------------------------------------------------
             # Create common NewsPulse record
-            # -------------------------------------------------
 
             event = {
                 "id": event_url,

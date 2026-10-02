@@ -14,8 +14,8 @@
         "Story": 50
     },
     "records_by_topic": {
-        "Artificial Intelligence": 15,
-        "Space": 23,
+        "Artificial Intelligence": 16,
+        "Space": 22,
         "Gaza war": 1,
         "Somali Civil War": 1,
         "coronation": 1,
@@ -35,11 +35,10 @@
         "2026 Moroccan general election": 1,
         "2026 Asian Games": 1,
         "Manchester City F.C. financial breaches scandal": 1,
-        "Web": 2,
-        "Other": 30,
-        "Business and Finance": 1,
-        "Cybersecurity": 1,
-        "Software Development": 3
+        "Other": 33,
+        "Hardware": 1,
+        "Software Development": 2,
+        "Business and Finance": 1
     },
     "records_by_date": {
         "2026-10-02": 51,
@@ -49,7 +48,7 @@
     "top_keywords": [
         [
             "crew",
-            37
+            38
         ],
         [
             "spacex",
@@ -57,7 +56,7 @@
         ],
         [
             "space",
-            28
+            27
         ],
         [
             "spacex crew",
@@ -96,15 +95,15 @@
             10
         ],
         [
+            "through",
+            10
+        ],
+        [
             "south",
             10
         ],
         [
             "mission",
-            9
-        ],
-        [
-            "spacecraft",
             9
         ]
     ],
@@ -195,43 +194,43 @@
         ],
         "Hacker News": [
             [
-                "show",
-                4
-            ],
-            [
-                "not",
+                "mode",
                 3
             ],
             [
-                "openai",
+                "show",
+                3
+            ],
+            [
+                "testing",
                 2
             ],
             [
-                "finance",
+                "radio",
                 2
             ],
             [
-                "apple",
+                "who",
                 2
             ],
             [
-                "iphone",
+                "assisted",
                 2
             ],
             [
-                "app",
+                "coder",
                 2
             ],
             [
-                "your",
+                "assisted coder",
                 2
             ],
             [
-                "claude",
+                "games",
                 2
             ],
             [
-                "windows",
+                "social",
                 2
             ]
         ]

@@ -6,10 +6,7 @@ from pathlib import Path
 import pandas as pd
 import streamlit as st
 
-
-# ============================================================
 # PROJECT PATH
-# ============================================================
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 
@@ -22,10 +19,7 @@ from apps.analysis.trend_analysis import (
     main as run_trend_analysis
 )
 
-
-# ============================================================
 # DATA FILES
-# ============================================================
 
 NEWS_DATA_FILE = (
     "data/processed/news_data.json"
@@ -35,10 +29,7 @@ TREND_DATA_FILE = (
     "data/processed/trend_analysis.json"
 )
 
-
-# ============================================================
 # PAGE CONFIGURATION
-# ============================================================
 
 st.set_page_config(
     page_title="NewsPulse",
@@ -48,28 +39,15 @@ st.set_page_config(
 )
 
 
-# ============================================================
-# DARK MODE FRIENDLY CSS
-# ============================================================
-
 st.markdown(
     """
     <style>
-
-    /* --------------------------------------------------------
-       Main page
-    -------------------------------------------------------- */
 
     .block-container {
         max-width: 1450px;
         padding-top: 2rem;
         padding-bottom: 3rem;
     }
-
-
-    /* --------------------------------------------------------
-       Headings
-    -------------------------------------------------------- */
 
     h1 {
         color: #F5F7FA !important;
@@ -87,19 +65,9 @@ st.markdown(
         font-weight: 650 !important;
     }
 
-
-    /* --------------------------------------------------------
-       Paragraph text
-    -------------------------------------------------------- */
-
     p {
         color: #D1D5DB;
     }
-
-
-    /* --------------------------------------------------------
-       Metric cards
-    -------------------------------------------------------- */
 
     div[data-testid="stMetric"] {
         background-color: #171A21;
@@ -117,57 +85,27 @@ st.markdown(
         font-weight: 700 !important;
     }
 
-
-    /* --------------------------------------------------------
-       Buttons
-    -------------------------------------------------------- */
-
     div.stButton > button {
         border-radius: 10px;
         font-weight: 600;
     }
-
-
-    /* --------------------------------------------------------
-       Article containers
-    -------------------------------------------------------- */
 
     div[data-testid="stVerticalBlockBorderWrapper"] {
         border-radius: 14px;
         border-color: #2B303B;
     }
 
-
-    /* --------------------------------------------------------
-       Sidebar
-    -------------------------------------------------------- */
-
     section[data-testid="stSidebar"] {
         border-right: 1px solid #2B303B;
     }
-
-
-    /* --------------------------------------------------------
-       Captions
-    -------------------------------------------------------- */
 
     div[data-testid="stCaptionContainer"] {
         color: #9CA3AF;
     }
 
-
-    /* --------------------------------------------------------
-       Links
-    -------------------------------------------------------- */
-
     a {
         font-weight: 600;
     }
-
-
-    /* --------------------------------------------------------
-       Horizontal rule
-    -------------------------------------------------------- */
 
     hr {
         border-color: #2B303B;
@@ -178,16 +116,9 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-
-# ============================================================
 # DATA FUNCTIONS
-# ============================================================
 
 def refresh_data():
-    """
-    Fetch fresh data from NASA, Wikipedia and Hacker News,
-    then regenerate trend analysis.
-    """
 
     run_pipeline()
     run_trend_analysis()
@@ -218,15 +149,9 @@ def load_trend_data():
 
         return json.load(file)
 
-
-# ============================================================
 # INITIAL DATA FETCH
-# ============================================================
 
 if "data_initialized" not in st.session_state:
-
-    # Use st.status instead of st.spinner.
-    # This gives a much clearer loading experience.
 
     with st.status(
         "Fetching latest news...",
@@ -250,10 +175,7 @@ if "data_initialized" not in st.session_state:
 
     st.session_state.last_refresh = datetime.now()
 
-
-# ============================================================
 # SIDEBAR
-# ============================================================
 
 with st.sidebar:
 
@@ -312,10 +234,7 @@ with st.sidebar:
         "to find specific records."
     )
 
-
-# ============================================================
 # LOAD DATA
-# ============================================================
 
 records = load_news_data()
 
@@ -323,10 +242,7 @@ trend_data = load_trend_data()
 
 df = pd.DataFrame(records)
 
-
-# ============================================================
 # ENSURE REQUIRED COLUMNS EXIST
-# ============================================================
 
 required_columns = [
     "id",
@@ -345,10 +261,7 @@ for column in required_columns:
 
         df[column] = ""
 
-
-# ============================================================
 # HEADER
-# ============================================================
 
 st.title("📰 NewsPulse")
 
@@ -361,10 +274,7 @@ st.write(
     "NASA, Wikipedia Current Events and Hacker News."
 )
 
-
-# ============================================================
 # SUMMARY METRICS
-# ============================================================
 
 st.divider()
 
@@ -389,10 +299,6 @@ hackernews_count = source_counts.get(
     "Hacker News",
     0
 )
-
-
-# ONLY FOUR CARDS
-# Topics card has been removed.
 
 col1, col2, col3, col4 = st.columns(4)
 
@@ -428,10 +334,7 @@ with col4:
         hackernews_count
     )
 
-
-# ============================================================
 # CONTENT OVERVIEW
-# ============================================================
 
 st.divider()
 
@@ -445,10 +348,7 @@ st.caption(
 
 overview_col1, overview_col2 = st.columns(2)
 
-
-# ------------------------------------------------------------
 # CONTENT TYPES
-# ------------------------------------------------------------
 
 with overview_col1:
 
@@ -490,10 +390,7 @@ with overview_col1:
             "No content type data available."
         )
 
-
-# ------------------------------------------------------------
 # TOPICS TABLE
-# ------------------------------------------------------------
 
 with overview_col2:
 
@@ -542,9 +439,8 @@ with overview_col2:
         st.info(
             "No topic data available."
         )
-# ============================================================
+
 # NEWS ACTIVITY OVER TIME
-# ============================================================
 
 st.divider()
 
@@ -593,10 +489,7 @@ else:
         "No date information available."
     )
 
-
-# ============================================================
 # TRENDING KEYWORDS
-# ============================================================
 
 st.divider()
 
@@ -645,13 +538,7 @@ else:
         "No keyword data available."
     )
 
-
-# ============================================================
 # SOURCE-WISE TRENDS
-#
-# IMPORTANT:
-# This section is intentionally BEFORE News Explorer.
-# ============================================================
 
 st.divider()
 
@@ -723,12 +610,7 @@ else:
         "No source-wise trend data available."
     )
 
-
-# ============================================================
 # NEWS EXPLORER
-#
-# This now comes AFTER Source-wise Trends.
-# ============================================================
 
 st.divider()
 
@@ -738,19 +620,13 @@ st.caption(
     "Search and filter the latest records collected by NewsPulse."
 )
 
-
-# ============================================================
 # FILTERS
-# ============================================================
 
 filter_col1, filter_col2, filter_col3, filter_col4 = (
     st.columns(4)
 )
 
-
-# ------------------------------------------------------------
 # SOURCE
-# ------------------------------------------------------------
 
 available_sources = [
     "All"
@@ -775,10 +651,7 @@ with filter_col1:
         available_sources
     )
 
-
-# ------------------------------------------------------------
 # TOPIC
-# ------------------------------------------------------------
 
 topic_values = sorted(
     [
@@ -805,10 +678,7 @@ with filter_col2:
         available_topics
     )
 
-
-# ------------------------------------------------------------
 # CONTENT TYPE
-# ------------------------------------------------------------
 
 content_type_values = sorted(
     [
@@ -835,10 +705,7 @@ with filter_col3:
         available_content_types
     )
 
-
-# ------------------------------------------------------------
 # SEARCH
-# ------------------------------------------------------------
 
 with filter_col4:
 
@@ -847,10 +714,7 @@ with filter_col4:
         placeholder="Search news..."
     )
 
-
-# ============================================================
 # APPLY FILTERS
-# ============================================================
 
 filtered_df = df.copy()
 
@@ -928,20 +792,14 @@ if search_text.strip():
         | topic_mask
     ]
 
-
-# ============================================================
 # RESULT COUNT
-# ============================================================
 
 st.caption(
     f"Showing {len(filtered_df)} of "
     f"{len(df)} records"
 )
 
-
-# ============================================================
 # NEWS ARTICLES
-# ============================================================
 
 if filtered_df.empty:
 
@@ -1001,11 +859,7 @@ else:
                 ""
             )
         )
-
-
-        # ----------------------------------------------------
         # ARTICLE CARD
-        # ----------------------------------------------------
 
         with st.container(
             border=True
@@ -1019,10 +873,7 @@ else:
                 f"{source}  •  {published_at}"
             )
 
-
-            # ------------------------------------------------
             # TOPIC + CONTENT TYPE
-            # ------------------------------------------------
 
             badge_col1, badge_col2, badge_col3 = (
                 st.columns([2, 2, 6])
@@ -1058,10 +909,7 @@ else:
                         "📄 Unknown type"
                     )
 
-
-            # ------------------------------------------------
             # DESCRIPTION
-            # ------------------------------------------------
 
             if description:
 
@@ -1086,10 +934,7 @@ else:
                     "No description available."
                 )
 
-
-            # ------------------------------------------------
             # ARTICLE LINK
-            # ------------------------------------------------
 
             if url:
 
@@ -1098,10 +943,7 @@ else:
                     url
                 )
 
-
-# ============================================================
 # FOOTER
-# ============================================================
 
 st.divider()
 

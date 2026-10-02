@@ -26,15 +26,6 @@ def fetch_nasa_page():
 
 
 def extract_date_from_url(url):
-    """
-    Extract publication date from a NASA article URL.
-
-    Example:
-    /2026/10/01/article-name/
-
-    Returns:
-    2026-10-01
-    """
 
     if not url:
         return ""
@@ -85,9 +76,8 @@ def parse_nasa_articles(html):
 
     for card in article_cards:
 
-        # -------------------------
         # Title and URL
-        # -------------------------
+
         title_link = card.select_one(
             "a.hds-content-item-heading"
         )
@@ -102,9 +92,7 @@ def parse_nasa_articles(html):
 
         url = title_link.get("href")
 
-        # -------------------------
         # Description
-        # -------------------------
         description_element = card.select_one(
             "p.margin-top-0.margin-bottom-1"
         )
@@ -117,9 +105,7 @@ def parse_nasa_articles(html):
                 strip=True
             )
 
-        # -------------------------
         # Content type
-        # -------------------------
         content_type = ""
 
         content_type_element = card.select_one(
@@ -132,9 +118,7 @@ def parse_nasa_articles(html):
                 strip=True
             )
 
-        # -------------------------
         # Publication date
-        # -------------------------
 
         published_at = ""
 
@@ -154,9 +138,7 @@ def parse_nasa_articles(html):
         if not published_at:
             published_at = extract_date_from_url(url)
 
-        # -------------------------
         # Store article
-        # -------------------------
         article = {
             "id": url,
             "title": title,

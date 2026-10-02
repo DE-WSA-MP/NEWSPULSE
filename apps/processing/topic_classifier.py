@@ -159,12 +159,6 @@ def normalize_text(text):
 
 
 def detect_topic(title="", description=""):
-    """
-    Detect a topic from the title and description.
-
-    Returns the topic with the highest number of
-    keyword matches.
-    """
 
     text = normalize_text(
         f"{title} {description}"

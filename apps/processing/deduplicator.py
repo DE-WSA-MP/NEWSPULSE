@@ -1,13 +1,4 @@
 def deduplicate_records(records):
-    """
-    Remove duplicate NewsPulse records using a set.
-
-    The record ID is used as the unique key.
-
-    Returns:
-        deduplicated_records
-    """
-
     seen_ids = set()
     deduplicated_records = []
 
