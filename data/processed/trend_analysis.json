@@ -6,16 +6,16 @@
         "Hacker News": 50
     },
     "records_by_content_type": {
-        "News Release": 1,
-        "Blog": 22,
-        "Article": 1,
-        "Image Article": 1,
+        "Image Article": 2,
+        "Article": 4,
+        "Blog": 17,
+        "News Release": 2,
         "Current Event": 19,
         "Story": 50
     },
     "records_by_topic": {
-        "Space": 25,
-        "Artificial Intelligence": 11,
+        "Artificial Intelligence": 15,
+        "Space": 23,
         "Gaza war": 1,
         "Somali Civil War": 1,
         "coronation": 1,
@@ -35,22 +35,25 @@
         "2026 Moroccan general election": 1,
         "2026 Asian Games": 1,
         "Manchester City F.C. financial breaches scandal": 1,
-        "Other": 37,
-        "Software Development": 1,
-        "Hardware": 1
+        "Web": 2,
+        "Other": 30,
+        "Business and Finance": 1,
+        "Cybersecurity": 1,
+        "Software Development": 3
     },
     "records_by_date": {
-        "2026-10-01": 73,
+        "2026-10-02": 51,
+        "2026-10-01": 20,
         "2026-09-29": 19
     },
     "top_keywords": [
         [
             "crew",
-            55
+            37
         ],
         [
             "spacex",
-            37
+            29
         ],
         [
             "space",
@@ -58,42 +61,30 @@
         ],
         [
             "spacex crew",
-            25
+            19
         ],
         [
-            "launch",
-            20
-        ],
-        [
-            "dragon",
-            16
-        ],
-        [
-            "spacecraft",
-            16
+            "station",
+            18
         ],
         [
             "falcon",
             15
         ],
         [
-            "station",
+            "launch",
             13
         ],
         [
-            "mission",
+            "force",
             12
         ],
         [
-            "force",
-            11
-        ],
-        [
-            "second",
-            11
-        ],
-        [
             "stage",
+            12
+        ],
+        [
+            "dragon",
             11
         ],
         [
@@ -101,51 +92,63 @@
             11
         ],
         [
-            "astronaut",
+            "agency",
             10
+        ],
+        [
+            "south",
+            10
+        ],
+        [
+            "mission",
+            9
+        ],
+        [
+            "spacecraft",
+            9
         ]
     ],
     "top_keywords_by_source": {
         "NASA": [
             [
                 "crew",
-                51
+                33
             ],
             [
                 "spacex",
-                37
+                29
             ],
             [
                 "space",
-                28
+                27
             ],
             [
                 "spacex crew",
-                25
+                19
             ],
             [
-                "launch",
-                20
-            ],
-            [
-                "dragon",
-                16
-            ],
-            [
-                "spacecraft",
-                16
+                "station",
+                18
             ],
             [
                 "falcon",
                 15
             ],
             [
-                "station",
+                "launch",
                 13
             ],
             [
-                "mission",
+                "stage",
                 12
+            ],
+            [
+                "dragon",
+                11
+            ],
+            [
+                "rocket",
+                11
             ]
         ],
         "Wikipedia": [
@@ -196,27 +199,27 @@
                 4
             ],
             [
-                "how",
-                4
+                "not",
+                3
             ],
             [
-                "what",
+                "openai",
                 2
             ],
             [
-                "broke",
+                "finance",
                 2
             ],
             [
-                "you",
+                "apple",
                 2
             ],
             [
-                "agent",
+                "iphone",
                 2
             ],
             [
-                "got",
+                "app",
                 2
             ],
             [
@@ -224,11 +227,11 @@
                 2
             ],
             [
-                "account",
+                "claude",
                 2
             ],
             [
-                "why",
+                "windows",
                 2
             ]
         ]
