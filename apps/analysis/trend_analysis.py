@@ -274,10 +274,7 @@ def main():
         f"{len(records)}"
     )
 
-    # -------------------------------------------------
     # Analysis
-    # -------------------------------------------------
-
     source_counts = analyze_sources(
         records
     )
@@ -302,9 +299,7 @@ def main():
         analyze_keywords_by_source(records)
     )
 
-    # -------------------------------------------------
     # Source analysis
-    # -------------------------------------------------
 
     print("\nRecords by source:")
 
@@ -313,9 +308,7 @@ def main():
             f"{source}: {count}"
         )
 
-    # -------------------------------------------------
     # Content type analysis
-    # -------------------------------------------------
 
     print("\nRecords by content type:")
 
@@ -327,9 +320,7 @@ def main():
             f"{content_type}: {count}"
         )
 
-    # -------------------------------------------------
     # Topic analysis
-    # -------------------------------------------------
 
     print("\nRecords by topic:")
 
@@ -339,9 +330,7 @@ def main():
             f"{topic}: {count}"
         )
 
-    # -------------------------------------------------
     # Date analysis
-    # -------------------------------------------------
 
     print("\nRecords by date:")
 
@@ -353,9 +342,7 @@ def main():
             f"{date}: {count}"
         )
 
-    # -------------------------------------------------
     # Keyword analysis
-    # -------------------------------------------------
 
     print("\nTop keywords:")
 
@@ -365,9 +352,7 @@ def main():
             f"{keyword}: {count}"
         )
 
-    # -------------------------------------------------
     # Source-wise keyword analysis
-    # -------------------------------------------------
 
     print(
         "\nTop keywords by source:"
@@ -387,9 +372,7 @@ def main():
                 f"  {keyword}: {count}"
             )
 
-    # -------------------------------------------------
     # Save results
-    # -------------------------------------------------
 
     analysis_results = {
         "total_records": len(records),
